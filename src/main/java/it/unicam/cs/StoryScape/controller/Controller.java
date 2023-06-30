@@ -46,7 +46,7 @@ public class Controller {
      *
      * @return the ontology consistency status as a string
      */
-    public String getOntologyConsistencyStatus() {
+    public String getConsistencyStatus() {
         if (this.isConsistent()) {
             return "Ontology consistent ✓";
         } else {
