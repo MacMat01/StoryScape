@@ -42,6 +42,19 @@ public class Controller {
     }
 
     /**
+     * Returns the ontology consistency status
+     *
+     * @return the ontology consistency status as a string
+     */
+    public String getOntologyConsistencyStatus() {
+        if (this.isConsistent()) {
+            return "Ontology consistent ✓";
+        } else {
+            return "Inconsistent ontology ｘ";
+        }
+    }
+
+    /**
      * Gets data from the ontology.
      *
      * @param query the query to execute
