@@ -1,4 +1,4 @@
-package it.unicam.cs.StoryScape.model;
+package it.unicam.cs.StoryScape.model.helper;
 
 /**
  * Enumeration that contains all the URIs used in the ontology.
