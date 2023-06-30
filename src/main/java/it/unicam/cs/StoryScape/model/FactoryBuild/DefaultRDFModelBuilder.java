@@ -1,4 +1,4 @@
-package it.unicam.cs.StoryScape.modelBuild;
+package it.unicam.cs.StoryScape.model.FactoryBuild;
 
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.Model;
