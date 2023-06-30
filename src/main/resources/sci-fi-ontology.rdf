@@ -1,0 +1,2630 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:sfo="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/"
+         xmlns:xml="http://www.w3.org/XML/1998/namespace"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:terms="http://open.vocab.org/terms/"
+         xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
+         xmlns="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#"
+         xml:base="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
+    <owl:Ontology rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
+        <rdfs:comment xml:lang="it">Questa ontologia permette ad un&apos;appassionato di opere di fantascienza di
+            ricercare, per ogni autore, non solo e non tanto i romanzi già noti e famosi, quanto i racconti e le storie
+            brevi che ognuno di loro aveva l&apos;uso di scrivere in grande quantità e che non sempre vengono ristampati
+            facilmente proprio per la loro brevità.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">The current ontology allows science fiction lovers to explore, for each author, not
+            only the well-known and celebrated novels, but also the short stories and novellas they used to write in
+            abundance. Often, because of their brevity, these works are not easily reprinted, despite their value.
+        </rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    </owl:Ontology>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://dbpedia.org/ontology/achievement -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/achievement">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/activeYears -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYears">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsEndDateMgr -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsEndDateMgr">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsEndYearMgr -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsEndYearMgr">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsStartDateMgr -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartDateMgr">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/activeYearsStartYearMgr -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartYearMgr">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/activity -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activity">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/affair -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/affair">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/agency -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/agency">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/allegiance -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/allegiance">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/almaMater -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/almaMater">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/announcedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/announcedFrom">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/approach -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/approach">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/arrestDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/arrestDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/artisticFunction -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/artisticFunction">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/astrologicalSign -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/astrologicalSign">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/awardName -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/awardName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/badGuy -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/badGuy">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/bestLap -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bestLap">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/bigPoolRecord -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bigPoolRecord">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/birthName -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/birthSign -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthSign">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/birthYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/bloodGroup -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bloodGroup">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/bloodType -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bloodType">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/board -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/board">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/bodyDiscovered -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bodyDiscovered">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/britishWins -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/britishWins">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/bustSize -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bustSize">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/bustWaistHipSize -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bustWaistHipSize">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/careerStation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/careerStation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/case -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/case">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/catch -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/catch">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/causeOfDeath -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/causeOfDeath">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/circumcised -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/circumcised">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/citizenship -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/citizenship">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/clothSize -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/clothSize">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/clothingSize -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/clothingSize">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/coalition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/coalition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/college -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/college">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/competitionTitle -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/competitionTitle">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/complexion -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/complexion">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/contest -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/contest">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/continentalTournament -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournament">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/continentalTournamentBronze -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournamentBronze">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/continentalTournamentGold -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournamentGold">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/continentalTournamentSilver -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournamentSilver">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/convictionDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/convictionDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/created -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/created">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/currentTeamManager -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currentTeamManager">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/danseCompetition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/danseCompetition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/danseScore -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/danseScore">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/dateOfBurial -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/dateOfBurial">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/deadInFightDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deadInFightDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/deadInFightPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deadInFightPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/deathAge -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathAge">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/deathCause -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathCause">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/deathYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/debutWork -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/debutWork">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/decoration -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/decoration">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/derivedWord -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/derivedWord">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/diploma -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/diploma">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/education -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/education">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/educationPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/educationPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/electionDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/electionDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/employer -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/employer">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/endCareer -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/endCareer">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/endReign -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/endReign">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/escalafon -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/escalafon">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/ethnicity -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/ethnicity">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/expedition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/expedition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/externalOrnament -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/externalOrnament">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/eyeColor -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/eyeColor">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/eyeColour -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/eyeColour">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/feat -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/feat">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/federation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/federation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/filmNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/filmNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/foot -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/foot">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/freeDanseScore -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeDanseScore">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/freeProgCompetition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeProgCompetition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/freeProgScore -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeProgScore">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/freeScoreCompetition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeScoreCompetition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/fullCompetition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/fullCompetition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/fullScore -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/fullScore">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/grave -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/grave">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/gymApparatus -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/gymApparatus">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/hairColor -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hairColor">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/hairColour -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hairColour">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/hand -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hand">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/handedness -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/handedness">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/handisport -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/handisport">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/hasNaturalBust -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hasNaturalBust">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/hipSize -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hipSize">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/homage -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/homage">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/idNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/idNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/iihfHof -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/iihfHof">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/imposedDanseCompetition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/imposedDanseCompetition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/imposedDanseScore -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/imposedDanseScore">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/individualisedPnd -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/individualisedPnd">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/juniorYearsEndYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/juniorYearsEndYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/juniorYearsStartYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/juniorYearsStartYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/jutsu -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/jutsu">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/killedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/killedBy">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/lahHof -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/lahHof">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/leadership -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/leadership">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/leagueManager -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/leagueManager">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/linguisticsTradition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/linguisticsTradition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/littlePoolRecord -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/littlePoolRecord">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/livingPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/livingPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/mainDomain -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mainDomain">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/mastersWins -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mastersWins">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/matchPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/matchPoint">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/measurements -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/measurements">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/media -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/media">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/member -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/member">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/militaryService -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/militaryService">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/mood -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mood">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/mount -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mount">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/movie -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/movie">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nationalTeamMatchPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTeamMatchPoint">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nationalTeamYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTeamYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nationalTournament -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournament">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nationalTournamentBronze -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournamentBronze">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nationalTournamentGold -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournamentGold">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nationalTournamentSilver -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournamentSilver">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nationality -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationality">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/networth -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/networth">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nndbId -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nndbId">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/nonProfessionalCareer -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nonProfessionalCareer">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/notableIdea -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/notableIdea">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/noteOnRestingPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/noteOnRestingPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/numberOfRun -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/numberOfRun">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/olympicGames -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGames">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/olympicGamesBronze -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesBronze">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/olympicGamesGold -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesGold">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/olympicGamesSilver -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesSilver">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/olympicGamesWins -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesWins">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/orientation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/orientation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/originalDanseCompetition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/originalDanseCompetition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/originalDanseScore -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/originalDanseScore">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/otherActivity -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherActivity">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/otherFunction -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherFunction">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/otherMedia -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherMedia">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/otherOccupation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherOccupation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/parliamentaryGroup -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/parliamentaryGroup">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/particularSign -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/particularSign">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/patent -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/patent">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/penisLength -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/penisLength">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/personFunction -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/personFunction">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/pgaWins -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/pgaWins">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/philosophicalSchool -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/philosophicalSchool">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/piercing -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/piercing">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/placeOfBurial -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/placeOfBurial">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/playerStatus -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/playerStatus">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/podium -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/podium">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/polePosition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/polePosition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/politicalFunction -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/politicalFunction">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/profession -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/profession">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/project -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/project">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/pseudonym -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/pseudonym">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/publication -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/publication">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/raceWins -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/raceWins">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/radio -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/radio">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/reign -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/reign">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/reignName -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/reignName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/relatedFunctions -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/relatedFunctions">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/residence -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/residence">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/restingDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/restingDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/restingPlace -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/restingPlace">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/restingPlacePosition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/restingPlacePosition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/retirementDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/retirementDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/salary -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/salary">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/scene -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/scene">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/school -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/school">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/seasonManager -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/seasonManager">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/second -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/second">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/sentence -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sentence">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/sex -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sex">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/sexualOrientation -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sexualOrientation">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/shoeNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shoeNumber">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/shoeSize -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shoeSize">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/shoot -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shoot">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/shortProgCompetition -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shortProgCompetition">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/shortProgScore -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shortProgScore">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/signature -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/signature">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/significantProject -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/significantProject">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/skinColor -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/skinColor">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/specialTrial -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/specialTrial">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/speciality -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/speciality">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/sportDiscipline -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sportDiscipline">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/sportsFunction -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sportsFunction">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/spouseName -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/spouseName">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/startCareer -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startCareer">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/startReign -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startReign">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/startWct -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startWct">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/startWqs -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startWqs">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/stateOfOrigin -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/stateOfOrigin">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/statusManager -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/statusManager">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/tattoo -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tattoo">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/teamManager -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/teamManager">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/temple -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/temple">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/templeYear -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/templeYear">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/tessitura -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tessitura">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/third -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/third">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/titleDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/titleDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/tvShow -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tvShow">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/usopenWins -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/usopenWins">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/victory -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/victory">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/victoryAsMgr -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/victoryAsMgr">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/victoryPercentageAsMgr -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/victoryPercentageAsMgr">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/waistSize -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/waistSize">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/weddingParentsDate -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/weddingParentsDate">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/world -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/world">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/worldTournament -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournament">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/worldTournamentBronze -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournamentBronze">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/worldTournamentGold -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournamentGold">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/worldTournamentSilver -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournamentSilver">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/Person/height -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/Person/height">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://dbpedia.org/ontology/Person/weight -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/Person/weight">
+        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://open.vocab.org/terms/defines -->
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/defines"/>
+
+
+    <!-- http://open.vocab.org/terms/describes -->
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/describes"/>
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+
+
+    <!-- http://www.w3.org/2007/05/powder-s#describedby -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2007/05/powder-s#describedby"/>
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasPublished -->
+
+    <owl:ObjectProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasPublished">
+        <owl:inverseOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isPublishedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:00:48Z</dc:date>
+    </owl:ObjectProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasWritten -->
+
+    <owl:ObjectProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasWritten">
+        <owl:inverseOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isWrittenBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer"/>
+        <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:45:42Z</dc:date>
+    </owl:ObjectProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isPublishedBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isPublishedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:03:40Z</dc:date>
+    </owl:ObjectProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isWrittenBy -->
+
+    <owl:ObjectProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isWrittenBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:46:33Z</dc:date>
+    </owl:ObjectProperty>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#basedIn -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#basedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:22:45Z</dc:date>
+    </owl:DatatypeProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#birthDate -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#birthDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:16:38Z</dc:date>
+    </owl:DatatypeProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#bornIn -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#bornIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:17:07Z</dc:date>
+    </owl:DatatypeProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#foundationDate -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#foundationDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:24:17Z</dc:date>
+    </owl:DatatypeProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:37Z</dc:date>
+    </owl:DatatypeProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#publishingDate -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#publishingDate">
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:06:10Z</dc:date>
+    </owl:DatatypeProperty>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#summary -->
+
+    <owl:DatatypeProperty rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#summary">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:09:48Z</dc:date>
+    </owl:DatatypeProperty>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://dbpedia.org/ontology/Animal -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Animal"/>
+
+
+    <!-- http://dbpedia.org/ontology/Artist -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Artist">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:Class>
+
+
+    <!-- http://dbpedia.org/ontology/Book -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Book">
+        <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/Book"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/WrittenWork"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">Buch</rdfs:label>
+        <rdfs:label xml:lang="nl">boek</rdfs:label>
+        <rdfs:label xml:lang="da">bog</rdfs:label>
+        <rdfs:label xml:lang="en">book</rdfs:label>
+        <rdfs:label xml:lang="pl">książka</rdfs:label>
+        <rdfs:label xml:lang="ga">leabhar</rdfs:label>
+        <rdfs:label xml:lang="it">libro</rdfs:label>
+        <rdfs:label xml:lang="fr">livre</rdfs:label>
+        <rdfs:label xml:lang="ca">llibre</rdfs:label>
+        <rdfs:label xml:lang="el">βιβλίο</rdfs:label>
+        <rdfs:label xml:lang="ru">книга</rdfs:label>
+        <rdfs:label xml:lang="ur">کتاب</rdfs:label>
+        <rdfs:label xml:lang="bn">বই</rdfs:label>
+        <rdfs:label xml:lang="ja">本</rdfs:label>
+        <rdfs:label xml:lang="ko">책</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Book"/>
+    </owl:Class>
+
+
+    <!-- http://dbpedia.org/ontology/Person -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="sl">Oseba</rdfs:label>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="ga">duine</rdfs:label>
+        <rdfs:label xml:lang="pl">osoba</rdfs:label>
+        <rdfs:label xml:lang="da">person</rdfs:label>
+        <rdfs:label xml:lang="en">person</rdfs:label>
+        <rdfs:label xml:lang="es">persona</rdfs:label>
+        <rdfs:label xml:lang="it">persona</rdfs:label>
+        <rdfs:label xml:lang="fr">personne</rdfs:label>
+        <rdfs:label xml:lang="nl">persoon</rdfs:label>
+        <rdfs:label xml:lang="eu">pertsona</rdfs:label>
+        <rdfs:label xml:lang="pt">pessoa</rdfs:label>
+        <rdfs:label xml:lang="el">Πληροφορίες προσώπου</rdfs:label>
+        <rdfs:label xml:lang="hy">անձ</rdfs:label>
+        <rdfs:label xml:lang="ar">شخص</rdfs:label>
+        <rdfs:label xml:lang="ur">شخص</rdfs:label>
+        <rdfs:label xml:lang="ja">人_(法律)</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Person"/>
+    </owl:Class>
+
+
+    <!-- http://dbpedia.org/ontology/Writer -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Writer">
+        <owl:equivalentClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer"/>
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </owl:Class>
+
+
+    <!-- http://dbpedia.org/ontology/WrittenWork -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/WrittenWork"/>
+
+
+    <!-- http://purl.org/ontology/bibo/Book -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/bibo/Book">
+        <owl:equivalentClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Artist"/>
+        <owl:disjointWith rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isWrittenBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                </owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:FlashStory -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:FlashStory">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed
+            and brief form of storytelling characterized by its extreme brevity.
+
+            It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a
+            single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete
+            story arc, including characters, setting, conflict, and resolution, within its limited word count.
+
+            Flash stories require writers to be economical with their language, employing precise and evocative prose to
+            deliver a powerful impact in a short span of time.
+
+            The brevity of flash stories allows for experimentation with different narrative techniques, themes, and
+            genres, making it a versatile and creative form of storytelling.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Novel -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Novel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">150
+                                        </xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A novel is a long-form work of fiction that tells a complex and extended narrative.
+            It is a literary genre that encompasses a wide range of storytelling styles, themes, and structures. Novels
+            are typically longer than other forms of fiction, often exceeding 151 pages.
+
+            At the heart of a novel is its ability to immerse readers in a richly imagined world populated by a diverse
+            cast of characters. Novels allow for intricate plotlines, multiple story arcs, and the exploration of
+            various themes and subplots. They provide ample space for character development, detailed descriptions of
+            settings, and the gradual unfolding of events.
+
+            Novels often feature a central protagonist or a group of characters who experience personal growth, confront
+            challenges, and navigate through conflicts. The narrative can follow a linear timeline or employ non-linear
+            structures, alternating between different perspectives or time periods. Novels can delve into the
+            complexities of human emotions, relationships, and societal issues, offering readers a deeper understanding
+            of the human condition.
+
+            The settings in novels are vividly depicted, providing a backdrop that can range from historical periods,
+            fantastical realms, futuristic worlds, to everyday contemporary life. Descriptions of these settings serve
+            to create atmosphere, enhance the reader&apos;s immersion, and contribute to the overall narrative
+            experience.
+
+            Themes in novels are wide-ranging, addressing universal concepts such as love, identity, power, morality,
+            social justice, and more. They can offer social commentary, explore philosophical ideas, or reflect on the
+            intricacies of human existence. Novels provide a platform for authors to delve into complex ideas and invite
+            readers to engage with thought-provoking concepts.
+
+            Novels offer a comprehensive reading experience, allowing readers to become deeply invested in the lives and
+            journeys of characters over an extended period. They provide an opportunity for authors to develop intricate
+            plotlines, build suspense, and create emotional connections between readers and the story&apos;s world.
+
+            In summary, a novel is a substantial work of fiction that offers a comprehensive and immersive reading
+            experience. It allows for the exploration of diverse characters, intricate plots, and profound themes.
+            Novels have the capacity to transport readers to different realms, evoke powerful emotions, and provide a
+            lasting impact through their expansive narratives.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">The novel is a literary genre that takes the form of a prose narrative,
+            characterized by a text of considerable extent. Its main purpose is to tell the stories of one or more
+            protagonists, whose stories may have both a main plot and a subplot. These plots can sometimes develop over
+            a wide time span, thus allowing for a time-dilated narrative.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:ShortNovel -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:ShortNovel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50
+                                        </xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that
+            falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer
+            than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
+
+            In a short novel, authors have more space and flexibility to develop characters, explore themes, and create
+            intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper
+            characterization, more detailed descriptions of settings, and a more complex exploration of ideas and
+            conflicts.
+
+            Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It
+            often focuses on a central character or a small group of characters and their journeys, struggles, or
+            transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
+
+            Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery,
+            science fiction, historical fiction, and more. They can tackle a range of themes, delve into the
+            complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative
+            structure.
+
+            Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter
+            time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact
+            narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
+
+            In summary, a short novel combines the advantages of both short stories and novels, providing a more
+            extensive exploration of characters and themes than a short story while maintaining a relatively compact and
+            concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive
+            reading experience within a condensed framework.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:ShortStory -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:ShortStory">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                        </xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">21
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A short story is a fictional prose narrative that is typically longer than a flash
+            story but shorter than a novella or novel. It is a self-contained work of literature that explores a
+            specific theme, idea, or event within a limited number of pages.
+
+            A short story typically focuses on a single character or a small group of characters and their interactions,
+            experiences, or conflicts. It aims to create a complete and engaging narrative within a concise framework.
+            Unlike a novel, a short story often lacks the extensive development of multiple plotlines or in-depth
+            exploration of numerous characters.
+
+            Short stories can span a wide range of genres, including romance, mystery, science fiction, fantasy, horror,
+            and more. They allow writers to delve into various aspects of human nature, emotions, and experiences,
+            capturing moments of insight, revelation, or transformation.
+
+            While short stories provide more space for character development, setting descriptions, and intricate plot
+            structures compared to flash fiction, they still require a careful balance between brevity and depth.
+            Writers must craft compelling narratives with well-rounded characters, a defined setting, and a satisfying
+            resolution, all within the limited word count of a short story.
+
+            Short stories offer readers the opportunity to experience a complete story in a relatively short amount of
+            time, making them accessible and enjoyable for both casual and avid readers. They allow for creative
+            exploration and experimentation with narrative techniques, literary devices, and storytelling styles while
+            delivering a satisfying narrative punch.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Story -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Story">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">20
+                                        </xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">51
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A story is a narrative account of events, experiences, or imaginary happenings that
+            unfold within a literary work. It is a fundamental form of human communication and has been used for
+            centuries as a means of conveying information, entertaining, and exploring the depths of the human
+            condition.
+
+            A story typically revolves around characters who undergo a series of actions, encounters, and challenges,
+            which drive the plot forward. It encompasses various elements such as setting, conflict, theme, and
+            resolution. These elements work together to create a cohesive and engaging narrative that captivates readers
+            or listeners.
+
+            The setting of a story refers to the time, place, and social environment in which the events occur. It
+            provides the backdrop against which the characters and their actions are situated, shaping the overall
+            atmosphere and context of the narrative.
+
+            Conflict is a central component of a story, presenting obstacles, dilemmas, or tensions that the characters
+            must confront and overcome. It can manifest as internal struggles within a character&apos;s mind or external
+            challenges arising from interactions with others or the environment. Conflict is often instrumental in
+            driving the plot and generating suspense, as characters strive to resolve their conflicts and achieve their
+            goals.
+
+            Themes in a story are the underlying ideas, messages, or concepts that the author seeks to convey. They can
+            explore various aspects of the human experience, such as love, friendship, morality, power, justice, or the
+            passage of time. Themes provide deeper layers of meaning and resonance within a story, inviting readers to
+            reflect on universal truths or engage with social, cultural, or philosophical issues.
+
+            The resolution of a story brings about the conclusion or outcome of the events and conflicts depicted. It
+            may provide closure, offer insights or revelations, or leave room for interpretation, depending on the
+            narrative&apos;s intention. A satisfying resolution often ties up loose ends, offers emotional or
+            intellectual satisfaction, or leaves a lasting impact on the reader.
+
+            Stories come in a multitude of forms, including novels, short stories, plays, fables, folktales, myths, and
+            more. They serve as a powerful tool for connecting with others, exploring different perspectives, and
+            immersing oneself in vivid and imaginative worlds. Through stories, writers and storytellers have the
+            ability to entertain, educate, inspire, and provoke thought, creating a lasting impact on individuals and
+            societies alike.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">The short story is a narrative form of relatively small size. It usually runs in a
+            narrative arc of 20 to 50 pages at most. It can be considered short if it ranges between 5 and 20 pages, or
+            even very short if less than 5 pages.
+
+            Because of its limited size, the short story requires measured attention to detail and has certain specific
+            structural features. It must present a unique plot revolving around a single main event and involving one or
+            a few characters.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description
+                            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasWritten"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">
+                            1
+                        </owl:minQualifiedCardinality>
+                        <owl:onClass
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:FlashFiction -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:FlashFiction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed
+            and brief form of storytelling characterized by its extreme brevity.
+
+            It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a
+            single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete
+            story arc, including characters, setting, conflict, and resolution, within its limited word count.
+
+            Flash stories require writers to be economical with their language, employing precise and evocative prose to
+            deliver a powerful impact in a short span of time.
+
+            The brevity of flash stories allows for experimentation with different narrative techniques, themes, and
+            genres, making it a versatile and creative form of storytelling.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:MicroFiction -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:MicroFiction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed
+            and brief form of storytelling characterized by its extreme brevity.
+
+            It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a
+            single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete
+            story arc, including characters, setting, conflict, and resolution, within its limited word count.
+
+            Flash stories require writers to be economical with their language, employing precise and evocative prose to
+            deliver a powerful impact in a short span of time.
+
+            The brevity of flash stories allows for experimentation with different narrative techniques, themes, and
+            genres, making it a versatile and creative form of storytelling.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Novella -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Novella">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50
+                                        </xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that
+            falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer
+            than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
+
+            In a short novel, authors have more space and flexibility to develop characters, explore themes, and create
+            intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper
+            characterization, more detailed descriptions of settings, and a more complex exploration of ideas and
+            conflicts.
+
+            Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It
+            often focuses on a central character or a small group of characters and their journeys, struggles, or
+            transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
+
+            Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery,
+            science fiction, historical fiction, and more. They can tackle a range of themes, delve into the
+            complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative
+            structure.
+
+            Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter
+            time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact
+            narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
+
+            In summary, a short novel combines the advantages of both short stories and novels, providing a more
+            extensive exploration of characters and themes than a short story while maintaining a relatively compact and
+            concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive
+            reading experience within a condensed framework.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Novellette -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Novellette">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                    <owl:Restriction>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
+                        <owl:onDataRange>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50
+                                        </xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151
+                                        </xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:onDataRange>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that
+            falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer
+            than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
+
+            In a short novel, authors have more space and flexibility to develop characters, explore themes, and create
+            intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper
+            characterization, more detailed descriptions of settings, and a more complex exploration of ideas and
+            conflicts.
+
+            Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It
+            often focuses on a central character or a small group of characters and their journeys, struggles, or
+            transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
+
+            Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery,
+            science fiction, historical fiction, and more. They can tackle a range of themes, delve into the
+            complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative
+            structure.
+
+            Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter
+            time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact
+            narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
+
+            In summary, a short novel combines the advantages of both short stories and novels, providing a more
+            extensive exploration of characters and themes than a short story while maintaining a relatively compact and
+            concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive
+            reading experience within a condensed framework.
+        </rdfs:comment>
+    </owl:Class>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher -->
+
+    <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty
+                        rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasPublished"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                </owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Casa_Editrice_La_Tribuna -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Casa_Editrice_La_Tribuna">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        <hasPublished
+                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
+        <basedIn>Piacenza</basedIn>
+        <foundationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1954</foundationDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:12:15Z</dc:date>
+        <rdfs:comment xml:lang="en">This publisher has published The_Man_in_the_High_Castle in Italy</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Edward_D._Hoch -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Edward_D._Hoch">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <hasWritten rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Zoo"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1930-02-22T00:00:00</birthDate>
+        <bornIn>Rochester</bornIn>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:50:12Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Isaac_Asimov -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Isaac_Asimov">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1920-01-02T00:00:00</birthDate>
+        <bornIn>Petrovici</bornIn>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:44:31Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_RB -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_RB">
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">11</numberOfPages>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T06:57:51Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_S -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_S">
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">43</numberOfPages>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T06:58:52Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_SN -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_SN">
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">130</numberOfPages>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T06:59:08Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Philip_K._Dick -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Philip_K._Dick">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <hasWritten
+                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
+        <birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1926-12-16T00:00:00</birthDate>
+        <bornIn>Chicago</bornIn>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:52:32Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle">
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">324</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1962</publishingDate>
+        <summary>&quot;The Man in the High Castle&quot; is a novel written by Philip K. Dick. Set in an alternate
+            history where the Axis powers, primarily Nazi Germany and Imperial Japan, won World War II and conquered the
+            United States, the story explores the consequences of this alternate outcome.
+
+            The book is centered around several characters living in a divided America. In the occupied western states,
+            controlled by the Japanese, we follow Juliana Frink, a young woman who becomes involved with the resistance
+            against the Japanese regime. Juliana finds herself embarking on a dangerous mission that could have
+            far-reaching implications for the balance of power.
+
+            On the other side, in the Nazi-controlled eastern states, we meet Robert Childan, a dealer in American
+            antiquities, and Frank Frink, Juliana&apos;s ex-husband, who struggles with his Jewish ancestry in a society
+            dominated by the Nazis. Their lives intersect with that of Hawthorne Abendsen, a mysterious author known as
+            the &quot;Man in the High Castle&quot; who has written a book depicting an alternate reality where the
+            Allies won the war.
+
+            As the story unfolds, the characters&apos; paths converge, and they confront the bleak reality of their
+            world while grappling with the hope that an alternate future might exist. Themes of identity, fascism, and
+            the nature of reality are explored throughout the book, creating a thought-provoking narrative that
+            questions the nature of history, truth, and human agency.
+
+            &quot;The Man in the High Castle&quot; offers a unique and chilling exploration of a world shaped by a
+            different historical outcome, weaving together multiple storylines that highlight the struggles of
+            individuals against totalitarian rule and the power of hope in the face of adversity.
+        </summary>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:53:34Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Zoo -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Zoo">
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</numberOfPages>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:49:57Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/">
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/Book"/>
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/data/definitions.ttl">
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/Book"/>
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/Person"/>
+    </rdf:Description>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+            <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+            <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+        <!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
