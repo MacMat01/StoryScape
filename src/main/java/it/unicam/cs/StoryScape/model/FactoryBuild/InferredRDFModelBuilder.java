@@ -1,9 +1,6 @@
 package it.unicam.cs.StoryScape.model.FactoryBuild;
 
-import org.apache.jena.rdf.model.InfModel;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;
 
 /**
@@ -18,7 +15,7 @@ public class InferredRDFModelBuilder extends DefaultRDFModelBuilder {
      * @param reasoner the reasoner to be used
      * @return the inferred model
      */
-    public InfModel buildInferredModel(InfModel model, Reasoner reasoner) {
+    public InfModel buildInferredModel(Model model, Reasoner reasoner) {
 //        reasoner = reasoner.bindSchema(model);
         return ModelFactory.createInfModel(reasoner, model);
     }

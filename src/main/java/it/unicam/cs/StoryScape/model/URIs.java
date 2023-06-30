@@ -11,7 +11,7 @@ public enum URIs {
     OWL("http://www.w3.org/2002/07/owl#"),
     DC("http://purl.org/dc/elements/1.1/"),
     DCTERMS("http://purl.org/dc/terms/"),
-    SFO("https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/"),
+    SFO("C:\\Users\\macma\\IdeaProjects\\StoryScape\\src\\main\\resources\\sci-fi-ontology.rdf"),
     POWDER("http://www.w3.org/2007/05/powder-s#"),
     PROV("http://www.w3.org/ns/prov#"),
     XML("http://www.w3.org/XML/1998/namespace");
