@@ -13,5 +13,5 @@ public interface Parser {
      * @param query the SPARQL query
      * @return the query execution
      */
-    ParsedData parse(QueryExecution query);
+    JSONData parse(QueryExecution query);
 }
