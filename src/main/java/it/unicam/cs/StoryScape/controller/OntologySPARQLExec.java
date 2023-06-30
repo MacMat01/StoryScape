@@ -11,7 +11,6 @@ import org.apache.jena.rdf.model.Model;
  */
 public class OntologySPARQLExec implements SPARQLExecutor {
 
-
     @Override
     public QueryExecution executeSPARQLQuery(Query query, Model model) {
         return executeSPARQLQuery(query.getFullQuery(), model);
