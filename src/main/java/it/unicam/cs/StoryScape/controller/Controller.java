@@ -1,9 +1,13 @@
 package it.unicam.cs.StoryScape.controller;
 
 import it.unicam.cs.StoryScape.model.FactoryBuild.InferredRDFModelBuilder;
+import it.unicam.cs.StoryScape.model.SPARQL.SelectionQueries;
 import it.unicam.cs.StoryScape.model.helper.URIs;
+import it.unicam.cs.StoryScape.model.parser.JSONParser;
+import it.unicam.cs.StoryScape.model.parser.ParsedData;
 import openllet.jena.PelletReasonerFactory;
 import org.apache.jena.ontology.OntModelSpec;
+import org.apache.jena.query.QueryExecution;
 import org.apache.jena.rdf.model.InfModel;
 import org.apache.jena.rdf.model.Model;
 
@@ -13,7 +17,7 @@ import org.apache.jena.rdf.model.Model;
 public class Controller {
 
     private final InferredRDFModelBuilder inferredRDFModelBuilder = new InferredRDFModelBuilder();
-    //    private final OntologySPARQLExec sparqlExec = new OntologySPARQLExec();
+    private final OntologySPARQLExec sparqlExec = new OntologySPARQLExec();
     private Model model;
 
     public Controller() {
@@ -35,6 +39,39 @@ public class Controller {
      */
     public boolean isConsistent() {
         return inferredRDFModelBuilder.isConsistent((InfModel) model);
+    }
+
+    /**
+     * Gets data from the ontology.
+     *
+     * @param query the query to execute
+     * @return the data
+     */
+    public ParsedData getData(SelectionQueries query) {
+        JSONParser parser = new JSONParser();
+        try (QueryExecution queryExecution = sparqlExec.executeSPARQLQuery(query, model)) {
+            return parser.parse(queryExecution);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     * Gets data from the ontology with arguments.
+     *
+     * @param query the query to execute
+     * @param args  the arguments of the query
+     * @return the data
+     */
+    public ParsedData getData(SelectionQueries query, Object... args) {
+        JSONParser parser = new JSONParser();
+        try (QueryExecution queryExecution = sparqlExec.executeSPARQLQuery(query, model, args)) {
+            return parser.parse(queryExecution);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
 }
