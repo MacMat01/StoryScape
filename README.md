@@ -12,4 +12,4 @@ StoryScape is an open-source repository dedicated to cataloging and showcasing a
 
 Whether you are an avid science fiction reader, a researcher, or simply curious about the world of sci-fi literature, StoryScape offers an enriching experience for exploring and enjoying the vast universe of science fiction books.
 
-Note: This is a fictional repository description created for demonstration purposes. The actual description may vary based on the specific features and objectives of the StoryScape repository.
+Note: This is a fictional repository description created for academic purposes. The actual description may vary based on the specific features and objectives of the StoryScape repository.
