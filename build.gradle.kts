@@ -13,9 +13,7 @@ dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
 
-    implementation("org.apache.jena:jena-core:4.3.0")
-
-    // https://mvnrepository.com/artifact/org.apache.jena/jena-core
+    // https://mvnrepository.com/artifact/org.apache.jena/
     implementation("org.apache.jena:jena-core:4.8.0")
     implementation("org.apache.jena:jena-arq:4.8.0")
 
