@@ -1,7 +1,7 @@
 package it.unicam.cs.StoryScape.controller;
 
 import it.unicam.cs.StoryScape.model.FactoryBuild.InferredRDFModelBuilder;
-import it.unicam.cs.StoryScape.model.URIs;
+import it.unicam.cs.StoryScape.model.helper.URIs;
 import openllet.jena.PelletReasonerFactory;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.InfModel;
