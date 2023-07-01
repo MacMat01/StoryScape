@@ -3,7 +3,7 @@ package it.unicam.cs.StoryScape.model.parser;
 import org.apache.jena.query.QueryExecution;
 
 /**
- * Interface that represents the parser wich parses the SPARQL query .
+ * Interface that represents the parser which parses the SPARQL query .
  */
 public interface Parser {
 
