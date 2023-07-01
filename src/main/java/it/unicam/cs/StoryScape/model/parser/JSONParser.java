@@ -47,14 +47,9 @@ public class JSONParser implements Parser {
      * @return the string representation of the node
      */
     private String parseNodeToString(RDFNode node) {
-        if (node == null) {
-            return null;
-        } else if (node.isLiteral()) {
-            return node.asLiteral().getString();
-        } else if (node.isResource()) {
-            return node.asResource().getURI();
-        } else {
+        if (node == null || (!node.isLiteral() && !node.isResource())) {
             return null;
         }
+        return node.isLiteral() ? node.asLiteral().getString() : node.asResource().getURI();
     }
 }
