@@ -1,11 +1,11 @@
 package it.unicam.cs.storyscape.controller;
 
 import it.unicam.cs.storyscape.model.factorybuild.InferredRDFModelBuilder;
-import it.unicam.cs.storyscape.model.sparql.OntologySPARQLExec;
-import it.unicam.cs.storyscape.model.sparql.SelectionQueries;
 import it.unicam.cs.storyscape.model.helper.URIs;
 import it.unicam.cs.storyscape.model.parser.JSONParser;
 import it.unicam.cs.storyscape.model.parser.ParsedData;
+import it.unicam.cs.storyscape.model.sparql.OntologySPARQLExec;
+import it.unicam.cs.storyscape.model.sparql.SelectionQueries;
 import openllet.jena.PelletReasonerFactory;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.query.QueryExecution;

@@ -1,7 +1,7 @@
 package it.unicam.cs.storyscape.controller;
 
-import it.unicam.cs.storyscape.model.sparql.SelectionQueries;
 import it.unicam.cs.storyscape.model.parser.ParsedData;
+import it.unicam.cs.storyscape.model.sparql.SelectionQueries;
 
 /**
  * Class that represents the query selector.
