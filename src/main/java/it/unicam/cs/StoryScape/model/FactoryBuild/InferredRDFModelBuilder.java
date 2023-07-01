@@ -16,7 +16,7 @@ public class InferredRDFModelBuilder extends DefaultRDFModelBuilder {
      * @return the inferred model
      */
     public InfModel buildInferredModel(Model model, Reasoner reasoner) {
-//        reasoner = reasoner.bindSchema(model);
+        reasoner = reasoner.bindSchema(model);
         return ModelFactory.createInfModel(reasoner, model);
     }
 
