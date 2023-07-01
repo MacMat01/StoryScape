@@ -39,4 +39,17 @@ public class QuerySelector {
         return controller.getData(SelectionQueries.SEARCH_BOOK, book);
     }
 
+    /**
+     * Returns the ontology consistency status
+     *
+     * @return the ontology consistency status as a string
+     */
+    public String getConsistencyStatus() {
+        if (controller.isConsistent()) {
+            return "Ontology consistent ✓";
+        } else {
+            return "Inconsistent ontology ｘ";
+        }
+    }
+
 }
