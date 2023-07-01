@@ -21,7 +21,7 @@ public interface Query {
                 PREFIX powder: <http://www.w3.org/2007/05/powder-s#>
                 PREFIX prov: <http://www.w3.org/ns/prov#>
                 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
-                PREDIX terms: <http://open.vocab.org/terms/>
+                PREFIX terms: <http://open.vocab.org/terms/>
                 """;
     }
 
