@@ -1,6 +1,7 @@
 package it.unicam.cs.storyscape.controller;
 
 import it.unicam.cs.storyscape.model.factorybuild.InferredRDFModelBuilder;
+import it.unicam.cs.storyscape.model.sparql.OntologySPARQLExec;
 import it.unicam.cs.storyscape.model.sparql.SelectionQueries;
 import it.unicam.cs.storyscape.model.helper.URIs;
 import it.unicam.cs.storyscape.model.parser.JSONParser;
