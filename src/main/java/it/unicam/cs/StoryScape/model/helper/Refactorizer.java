@@ -34,7 +34,7 @@ public class Refactorizer {
                 URI parsedUri = new URI(uri);
                 String path = parsedUri.getPath();
                 if (path != null && !path.isEmpty()) {
-                    return path.substring(1);  // Rimuove la barra iniziale dal percorso
+                    return path.substring(1);  // Remove the first character from the path
                 }
             } catch (URISyntaxException e) {
                 e.printStackTrace();
