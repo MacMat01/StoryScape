@@ -3,6 +3,7 @@ package it.unicam.cs.storyscape.model.factorybuild;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
+import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.util.FileManager;
 
@@ -23,7 +24,7 @@ public class DefaultRDFModelBuilder implements RDFModelBuilder {
     @Override
     public Model buildRDFModel(String path) {
         Model model = ModelFactory.createDefaultModel();
-        RDFDataMgr.read(model, Objects.requireNonNull(fileManager.open(path)), null);
+        RDFDataMgr.read(model, Objects.requireNonNull(fileManager.open(path)), Lang.RDFXML);
         return model;
     }
 
@@ -35,7 +36,7 @@ public class DefaultRDFModelBuilder implements RDFModelBuilder {
     @Override
     public Model buildOntologyModel(String path, OntModelSpec modelSpec) {
         Model model = ModelFactory.createOntologyModel(modelSpec);
-        RDFDataMgr.read(model, Objects.requireNonNull(fileManager.open(path)), null);
+        RDFDataMgr.read(model, Objects.requireNonNull(fileManager.open(path)), Lang.RDFXML);
         return model;
     }
 }
