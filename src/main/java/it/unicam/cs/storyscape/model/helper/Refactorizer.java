@@ -1,4 +1,4 @@
-package it.unicam.cs.StoryScape.model.helper;
+package it.unicam.cs.storyscape.model.helper;
 
 import java.net.URI;
 import java.net.URISyntaxException;

@@ -1,6 +1,6 @@
-package it.unicam.cs.StoryScape.controller;
+package it.unicam.cs.storyscape.controller;
 
-import it.unicam.cs.StoryScape.model.SPARQL.Query;
+import it.unicam.cs.storyscape.model.sparql.Query;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.rdf.model.Model;

@@ -1,4 +1,4 @@
-package it.unicam.cs.StoryScape.model.parser;
+package it.unicam.cs.storyscape.model.parser;
 
 import java.util.Collection;
 

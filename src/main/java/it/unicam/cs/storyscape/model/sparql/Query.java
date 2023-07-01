@@ -1,4 +1,4 @@
-package it.unicam.cs.StoryScape.model.SPARQL;
+package it.unicam.cs.storyscape.model.sparql;
 
 /**
  * Interface that represents a SPARQL query.

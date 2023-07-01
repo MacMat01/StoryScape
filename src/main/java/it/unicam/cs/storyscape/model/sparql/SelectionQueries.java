@@ -1,4 +1,4 @@
-package it.unicam.cs.StoryScape.model.SPARQL;
+package it.unicam.cs.storyscape.model.sparql;
 
 /**
  * Enum that represents all the selection queries.
