@@ -12,16 +12,11 @@
          xmlns="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#"
          xml:base="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
     <owl:Ontology rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
-        <rdfs:comment xml:lang="it">Questa ontologia permette ad un&apos;appassionato di opere di fantascienza di
-            ricercare, per ogni autore, non solo e non tanto i romanzi già noti e famosi, quanto i racconti e le storie
-            brevi che ognuno di loro aveva l&apos;uso di scrivere in grande quantità e che non sempre vengono ristampati
-            facilmente proprio per la loro brevità.
-        </rdfs:comment>
         <rdfs:comment xml:lang="en">The current ontology allows science fiction lovers to explore, for each author, not
             only the well-known and celebrated novels, but also the short stories and novellas they used to write in
             abundance. Often, because of their brevity, these works are not easily reprinted, despite their value.
         </rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
 
 
@@ -32,1539 +27,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-
-    <!-- http://dbpedia.org/ontology/achievement -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/achievement">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/activeYears -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYears">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/activeYearsEndDateMgr -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsEndDateMgr">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/activeYearsEndYearMgr -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsEndYearMgr">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/activeYearsStartDateMgr -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartDateMgr">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/activeYearsStartYearMgr -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activeYearsStartYearMgr">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/activity -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/activity">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/affair -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/affair">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/agency -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/agency">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/allegiance -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/allegiance">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/almaMater -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/almaMater">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/announcedFrom -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/announcedFrom">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/approach -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/approach">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/arrestDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/arrestDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/artisticFunction -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/artisticFunction">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/astrologicalSign -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/astrologicalSign">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/awardName -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/awardName">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/badGuy -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/badGuy">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/bestLap -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bestLap">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/bigPoolRecord -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bigPoolRecord">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/birthName -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthName">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/birthSign -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthSign">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/birthYear -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/birthYear">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/bloodGroup -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bloodGroup">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/bloodType -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bloodType">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/board -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/board">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/bodyDiscovered -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bodyDiscovered">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/britishWins -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/britishWins">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/bustSize -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bustSize">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/bustWaistHipSize -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/bustWaistHipSize">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/careerStation -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/careerStation">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/case -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/case">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/catch -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/catch">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/causeOfDeath -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/causeOfDeath">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/circumcised -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/circumcised">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/citizenship -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/citizenship">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/clothSize -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/clothSize">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/clothingSize -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/clothingSize">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/coalition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/coalition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/college -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/college">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/competitionTitle -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/competitionTitle">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/complexion -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/complexion">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/contest -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/contest">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/continentalTournament -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournament">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/continentalTournamentBronze -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournamentBronze">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/continentalTournamentGold -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournamentGold">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/continentalTournamentSilver -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/continentalTournamentSilver">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/convictionDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/convictionDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/created -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/created">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/currentTeamManager -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/currentTeamManager">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/danseCompetition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/danseCompetition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/danseScore -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/danseScore">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/dateOfBurial -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/dateOfBurial">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/deadInFightDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deadInFightDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/deadInFightPlace -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deadInFightPlace">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/deathAge -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathAge">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/deathCause -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathCause">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/deathYear -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/deathYear">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/debutWork -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/debutWork">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/decoration -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/decoration">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/derivedWord -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/derivedWord">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/diploma -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/diploma">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/education -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/education">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/educationPlace -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/educationPlace">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/electionDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/electionDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/employer -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/employer">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/endCareer -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/endCareer">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/endReign -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/endReign">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/escalafon -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/escalafon">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/ethnicity -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/ethnicity">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/expedition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/expedition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/externalOrnament -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/externalOrnament">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/eyeColor -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/eyeColor">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/eyeColour -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/eyeColour">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/feat -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/feat">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/federation -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/federation">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/filmNumber -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/filmNumber">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/foot -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/foot">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/freeDanseScore -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeDanseScore">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/freeProgCompetition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeProgCompetition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/freeProgScore -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeProgScore">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/freeScoreCompetition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/freeScoreCompetition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/fullCompetition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/fullCompetition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/fullScore -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/fullScore">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/grave -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/grave">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/gymApparatus -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/gymApparatus">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/hairColor -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hairColor">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/hairColour -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hairColour">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/hand -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hand">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/handedness -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/handedness">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/handisport -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/handisport">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/hasNaturalBust -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hasNaturalBust">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/hipSize -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/hipSize">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/homage -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/homage">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/idNumber -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/idNumber">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/iihfHof -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/iihfHof">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/imposedDanseCompetition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/imposedDanseCompetition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/imposedDanseScore -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/imposedDanseScore">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/individualisedPnd -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/individualisedPnd">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/juniorYearsEndYear -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/juniorYearsEndYear">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/juniorYearsStartYear -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/juniorYearsStartYear">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/jutsu -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/jutsu">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/killedBy -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/killedBy">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/lahHof -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/lahHof">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/leadership -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/leadership">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/leagueManager -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/leagueManager">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/linguisticsTradition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/linguisticsTradition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/littlePoolRecord -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/littlePoolRecord">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/livingPlace -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/livingPlace">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/mainDomain -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mainDomain">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/mastersWins -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mastersWins">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/matchPoint -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/matchPoint">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/measurements -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/measurements">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/media -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/media">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/member -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/member">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/militaryService -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/militaryService">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/mood -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mood">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/mount -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/mount">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/movie -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/movie">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nationalTeamMatchPoint -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTeamMatchPoint">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nationalTeamYear -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTeamYear">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nationalTournament -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournament">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nationalTournamentBronze -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournamentBronze">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nationalTournamentGold -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournamentGold">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nationalTournamentSilver -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationalTournamentSilver">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nationality -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nationality">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/networth -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/networth">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nndbId -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nndbId">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/nonProfessionalCareer -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/nonProfessionalCareer">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/notableIdea -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/notableIdea">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/noteOnRestingPlace -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/noteOnRestingPlace">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/numberOfRun -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/numberOfRun">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/olympicGames -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGames">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/olympicGamesBronze -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesBronze">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/olympicGamesGold -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesGold">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/olympicGamesSilver -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesSilver">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/olympicGamesWins -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/olympicGamesWins">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/orientation -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/orientation">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/originalDanseCompetition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/originalDanseCompetition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/originalDanseScore -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/originalDanseScore">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/otherActivity -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherActivity">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/otherFunction -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherFunction">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/otherMedia -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherMedia">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/otherOccupation -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/otherOccupation">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/parliamentaryGroup -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/parliamentaryGroup">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/particularSign -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/particularSign">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/patent -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/patent">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/penisLength -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/penisLength">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/personFunction -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/personFunction">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/pgaWins -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/pgaWins">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/philosophicalSchool -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/philosophicalSchool">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/piercing -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/piercing">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/placeOfBurial -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/placeOfBurial">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/playerStatus -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/playerStatus">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/podium -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/podium">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/polePosition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/polePosition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/politicalFunction -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/politicalFunction">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/profession -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/profession">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/project -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/project">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/pseudonym -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/pseudonym">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/publication -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/publication">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/raceWins -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/raceWins">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/radio -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/radio">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/reign -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/reign">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/reignName -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/reignName">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/relatedFunctions -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/relatedFunctions">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/residence -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/residence">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/restingDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/restingDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/restingPlace -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/restingPlace">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/restingPlacePosition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/restingPlacePosition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/retirementDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/retirementDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/salary -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/salary">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/scene -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/scene">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/school -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/school">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/seasonManager -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/seasonManager">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/second -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/second">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/sentence -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sentence">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/sex -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sex">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/sexualOrientation -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sexualOrientation">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/shoeNumber -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shoeNumber">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/shoeSize -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shoeSize">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/shoot -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shoot">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/shortProgCompetition -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shortProgCompetition">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/shortProgScore -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/shortProgScore">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/signature -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/signature">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/significantProject -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/significantProject">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/skinColor -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/skinColor">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/specialTrial -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/specialTrial">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/speciality -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/speciality">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/sportDiscipline -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sportDiscipline">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/sportsFunction -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/sportsFunction">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/spouseName -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/spouseName">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/startCareer -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startCareer">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/startReign -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startReign">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/startWct -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startWct">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/startWqs -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/startWqs">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/stateOfOrigin -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/stateOfOrigin">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/statusManager -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/statusManager">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/tattoo -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tattoo">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/teamManager -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/teamManager">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/temple -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/temple">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/templeYear -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/templeYear">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/tessitura -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tessitura">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/third -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/third">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/titleDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/titleDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/tvShow -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/tvShow">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/usopenWins -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/usopenWins">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/victory -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/victory">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/victoryAsMgr -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/victoryAsMgr">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/victoryPercentageAsMgr -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/victoryPercentageAsMgr">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/waistSize -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/waistSize">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/weddingParentsDate -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/weddingParentsDate">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/world -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/world">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/worldTournament -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournament">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/worldTournamentBronze -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournamentBronze">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/worldTournamentGold -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournamentGold">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/worldTournamentSilver -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/worldTournamentSilver">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/Person/height -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/Person/height">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
-
-
-    <!-- http://dbpedia.org/ontology/Person/weight -->
-
-    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/Person/weight">
-        <rdfs:domain rdf:resource="http://dbpedia.org/ontology/Person"/>
-    </owl:AnnotationProperty>
 
 
     <!-- http://open.vocab.org/terms/defines -->
@@ -1766,21 +228,7 @@
         <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/Book"/>
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/WrittenWork"/>
         <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
-        <rdfs:label xml:lang="de">Buch</rdfs:label>
-        <rdfs:label xml:lang="nl">boek</rdfs:label>
-        <rdfs:label xml:lang="da">bog</rdfs:label>
         <rdfs:label xml:lang="en">book</rdfs:label>
-        <rdfs:label xml:lang="pl">książka</rdfs:label>
-        <rdfs:label xml:lang="ga">leabhar</rdfs:label>
-        <rdfs:label xml:lang="it">libro</rdfs:label>
-        <rdfs:label xml:lang="fr">livre</rdfs:label>
-        <rdfs:label xml:lang="ca">llibre</rdfs:label>
-        <rdfs:label xml:lang="el">βιβλίο</rdfs:label>
-        <rdfs:label xml:lang="ru">книга</rdfs:label>
-        <rdfs:label xml:lang="ur">کتاب</rdfs:label>
-        <rdfs:label xml:lang="bn">বই</rdfs:label>
-        <rdfs:label xml:lang="ja">本</rdfs:label>
-        <rdfs:label xml:lang="ko">책</rdfs:label>
         <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
         <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Book"/>
     </owl:Class>
@@ -1791,23 +239,7 @@
     <owl:Class rdf:about="http://dbpedia.org/ontology/Person">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/>
         <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
-        <rdfs:label xml:lang="sl">Oseba</rdfs:label>
-        <rdfs:label xml:lang="de">Person</rdfs:label>
-        <rdfs:label xml:lang="ga">duine</rdfs:label>
-        <rdfs:label xml:lang="pl">osoba</rdfs:label>
-        <rdfs:label xml:lang="da">person</rdfs:label>
         <rdfs:label xml:lang="en">person</rdfs:label>
-        <rdfs:label xml:lang="es">persona</rdfs:label>
-        <rdfs:label xml:lang="it">persona</rdfs:label>
-        <rdfs:label xml:lang="fr">personne</rdfs:label>
-        <rdfs:label xml:lang="nl">persoon</rdfs:label>
-        <rdfs:label xml:lang="eu">pertsona</rdfs:label>
-        <rdfs:label xml:lang="pt">pessoa</rdfs:label>
-        <rdfs:label xml:lang="el">Πληροφορίες προσώπου</rdfs:label>
-        <rdfs:label xml:lang="hy">անձ</rdfs:label>
-        <rdfs:label xml:lang="ar">شخص</rdfs:label>
-        <rdfs:label xml:lang="ur">شخص</rdfs:label>
-        <rdfs:label xml:lang="ja">人_(法律)</rdfs:label>
         <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
         <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Person"/>
     </owl:Class>
@@ -1878,7 +310,7 @@
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
                                         <xsd:maxExclusive
-                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6
                                         </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
@@ -2064,7 +496,7 @@
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
                                         <xsd:minExclusive
-                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5
                                         </xsd:minExclusive>
                                     </rdf:Description>
                                     <rdf:Description>
@@ -2235,7 +667,7 @@
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
                                         <xsd:maxExclusive
-                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6
                                         </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
@@ -2282,7 +714,7 @@
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
                                         <xsd:maxExclusive
-                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">4
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6
                                         </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
@@ -2467,18 +899,49 @@
      -->
 
 
-    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Casa_Editrice_La_Tribuna -->
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A._E._Van_Vogt -->
 
-    <owl:NamedIndividual
-            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Casa_Editrice_La_Tribuna">
-        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
-        <hasPublished
-                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
-        <basedIn>Piacenza</basedIn>
-        <foundationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1954</foundationDate>
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A._E._Van_Vogt">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
         <dc:creator>MacMat</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:12:15Z</dc:date>
-        <rdfs:comment xml:lang="en">This publisher has published The_Man_in_the_High_Castle in Italy</rdfs:comment>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:45Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A_Message_from_Morj -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A_Message_from_Morj">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">3</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1967</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:30:40Z</dc:date>
+        <rdfs:label xml:lang="en">A Message from Morj</rdfs:label>
+        <rdfs:label xml:lang="it">Un Messaggio da Morj</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Charles_L._Harness -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Charles_L._Harness">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:45Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Corridoi_del_Tempo -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Corridoi_del_Tempo">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Charles_L._Harness"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">148</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1988</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:42:15Z</dc:date>
+        <rdfs:label xml:lang="it">Corridoi del Tempo</rdfs:label>
+        <rdfs:label xml:lang="en">Corridors of Time</rdfs:label>
     </owl:NamedIndividual>
 
 
@@ -2494,6 +957,40 @@
     </owl:NamedIndividual>
 
 
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#George_A._Effinger -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#George_A._Effinger">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:27Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Henry_Kuttner -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Henry_Kuttner">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:52Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Gattino_di_Schrodinger -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Gattino_di_Schrodinger">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#George_A._Effinger"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">23</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1990</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:40:04Z</dc:date>
+        <rdfs:label xml:lang="it">Il Gattino di Schrodinger</rdfs:label>
+        <rdfs:label xml:lang="en">Schrodinger&apos;s Kitten</rdfs:label>
+    </owl:NamedIndividual>
+
+
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Isaac_Asimov -->
 
     <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Isaac_Asimov">
@@ -2505,30 +1002,59 @@
     </owl:NamedIndividual>
 
 
-    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_RB -->
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Jack_Finney -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_RB">
-        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">11</numberOfPages>
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Jack_Finney">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
         <dc:creator>MacMat</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T06:57:51Z</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:36Z</dc:date>
     </owl:NamedIndividual>
 
 
-    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_S -->
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Johnny_Mnemonico -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_S">
-        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">43</numberOfPages>
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Johnny_Mnemonico">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#William_Gibson"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">16</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1989</publishingDate>
         <dc:creator>MacMat</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T06:58:52Z</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:39:34Z</dc:date>
+        <rdfs:label xml:lang="en">Johnny Mnemonico</rdfs:label>
+        <rdfs:label xml:lang="it">Johnny Mnemonico</rdfs:label>
     </owl:NamedIndividual>
 
 
-    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_SN -->
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Libro_SN">
-        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">130</numberOfPages>
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        <hasPublished
+                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
+        <basedIn>Piacenza</basedIn>
+        <foundationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1954</foundationDate>
         <dc:creator>MacMat</dc:creator>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-30T06:59:08Z</dc:date>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:12:15Z</dc:date>
+        <rdfs:comment xml:lang="en">This publisher has published The_Man_in_the_High_Castle in Italy</rdfs:comment>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Longanesi -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Longanesi">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
+        <hasPublished rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A_Message_from_Morj"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:32:51Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori">
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:45:14Z</dc:date>
     </owl:NamedIndividual>
 
 
@@ -2545,12 +1071,91 @@
     </owl:NamedIndividual>
 
 
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ponzoni -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ponzoni">
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:45:32Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Racconti_dalle_Foreste_di_Venia -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Racconti_dalle_Foreste_di_Venia">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Silverberg"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">18</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1992</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:39:21Z</dc:date>
+        <rdfs:label xml:lang="it">Racconti dalle Foreste di Venia</rdfs:label>
+        <rdfs:label xml:lang="en">Tales from the Forests of Venia</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ray_Russel -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ray_Russel">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <hasWritten rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A_Message_from_Morj"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:31:18Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Sheckley -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Sheckley">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:18Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Silverberg -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Silverberg">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <hasWritten
+                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:37:26Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Rod_Serling -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Rod_Serling">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:07Z</dc:date>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Se_Stesso -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Se_Stesso">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Longanesi"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A._E._Van_Vogt"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1967</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:34:06Z</dc:date>
+        <rdfs:label xml:lang="it">Se Stesso</rdfs:label>
+        <rdfs:label xml:lang="en">Themselve</rdfs:label>
+    </owl:NamedIndividual>
+
+
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle -->
 
     <owl:NamedIndividual
             rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle">
-        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">324</numberOfPages>
-        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1962</publishingDate>
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">322</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1965</publishingDate>
         <summary>&quot;The Man in the High Castle&quot; is a novel written by Philip K. Dick. Set in an alternate
             history where the Axis powers, primarily Nazi Germany and Imperial Japan, won World War II and conquered the
             United States, the story explores the consequences of this alternate outcome.
@@ -2577,15 +1182,140 @@
         </summary>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:53:34Z</dc:date>
+        <rdfs:label xml:lang="it">La Svastica sul Sole</rdfs:label>
+        <rdfs:label xml:lang="en">The Man in the High Castle</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Tutta_la_Verità -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Tutta_la_Verità">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Rod_Serling"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">25</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1990</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:39:41Z</dc:date>
+        <rdfs:label xml:lang="en">The Whole Truth</rdfs:label>
+        <rdfs:label xml:lang="it">Tutta la Verità</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Un_Biglietto_per_Tranai -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Un_Biglietto_per_Tranai">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Sheckley"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">29</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1960</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:39:53Z</dc:date>
+        <rdfs:label xml:lang="en">A Ticket to Tranai</rdfs:label>
+        <rdfs:label xml:lang="it">Un Biglietto per Tranai</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Viaggio_Allucinante -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Viaggio_Allucinante">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Isaac_Asimov"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">203</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1966</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:03Z</dc:date>
+        <rdfs:label xml:lang="en">Hallucinatory Journey</rdfs:label>
+        <rdfs:label xml:lang="it">Viaggio Allucinante</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#William_Gibson -->
+
+    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#William_Gibson">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:58Z</dc:date>
     </owl:NamedIndividual>
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Zoo -->
 
     <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Zoo">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
         <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1979</publishingDate>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:49:57Z</dc:date>
+        <rdfs:label xml:lang="en">Zoo</rdfs:label>
+        <rdfs:label xml:lang="it">Zoo</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Gli_Invasati_(L&apos;invasione_degli_ultracorpi) -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Gli_Invasati_(L&apos;invasione_degli_ultracorpi)">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Jack_Finney"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">148</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1956</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:40:26Z</dc:date>
+        <rdfs:label xml:lang="it">Gli Invasati (L&apos;invasione degli ultracorpi)</rdfs:label>
+        <rdfs:label xml:lang="en">The Invaders (Invasion of the Body Snatchers).</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Cacciatore_di_Androidi_(Blade_Runner) -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Cacciatore_di_Androidi_(Blade_Runner)">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Philip_K._Dick"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">232</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1971</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:23Z</dc:date>
+        <rdfs:label xml:lang="en">Blade Runner</rdfs:label>
+        <rdfs:label xml:lang="it">Il Cacciatore di Androidi</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">9</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1988</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:36:05Z</dc:date>
+        <rdfs:label xml:lang="it">L&apos;Uomo che Volava nel Tempo</rdfs:label>
+        <rdfs:label xml:lang="en">The Man Who Flew Through Time</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Altra_Realtà_(La_scacchiera_sterminata) -->
+
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Altra_Realtà_(La_scacchiera_sterminata)">
+        <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+        <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ponzoni"/>
+        <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Henry_Kuttner"/>
+        <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">140</numberOfPages>
+        <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1958</publishingDate>
+        <dc:creator>MacMat</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:42:43Z</dc:date>
+        <rdfs:label xml:lang="it">L&apos;Altra Realtà (La scacchiera sterminata)</rdfs:label>
+        <rdfs:label xml:lang="en">The Other Reality (The Exterminated Chessboard)</rdfs:label>
     </owl:NamedIndividual>
 
 
