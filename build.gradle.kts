@@ -1,5 +1,7 @@
 plugins {
     id("java")
+    id("application")
+    id("org.openjfx.javafxplugin") version "0.0.13"
 }
 
 group = "it.cs.unicam"
@@ -26,6 +28,15 @@ dependencies {
 
 }
 
+javafx {
+    version = "20"
+    modules("javafx.controls", "javafx.fxml")
+}
+
 tasks.test {
     useJUnitPlatform()
+}
+
+application {
+    mainClass.set("it/unicam/cs/storyscape/App.java")
 }
