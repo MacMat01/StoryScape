@@ -21,7 +21,7 @@ public class Controller {
     private Model model;
 
     public Controller() {
-        this.model = inferredRDFModelBuilder.buildOntologyModel(URIs.SFO.getURI(), OntModelSpec.OWL_DL_MEM);
+        this.model = inferredRDFModelBuilder.buildOntologyModel(getClass().getClassLoader().getResourceAsStream(URIs.SFO.getURI()), OntModelSpec.OWL_DL_MEM);
         this.startInference();
     }
 

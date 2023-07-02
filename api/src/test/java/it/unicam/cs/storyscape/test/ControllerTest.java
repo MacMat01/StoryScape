@@ -1,6 +1,6 @@
 package it.unicam.cs.storyscape.test;
 
-import it.unicam.cs.storyscape.controller.Controller;
+import it.unicam.cs.storyscape.factorybuild.Controller;
 import it.unicam.cs.storyscape.helper.URIs;
 import it.unicam.cs.storyscape.parser.ParsedData;
 import it.unicam.cs.storyscape.sparql.SelectionQueries;

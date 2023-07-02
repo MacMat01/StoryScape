@@ -3,6 +3,8 @@ package it.unicam.cs.storyscape.factorybuild;
 import org.apache.jena.ontology.OntModelSpec;
 import org.apache.jena.rdf.model.Model;
 
+import java.io.InputStream;
+
 /**
  * Interface that represents the RDF model builder.
  */
@@ -16,12 +18,12 @@ public interface RDFModelBuilder {
     Model buildRDFModel();
 
     /**
-     * Method that builds the RDF model from a file.
+     * Method that builds the RDF from the stream of a file resource.
      *
-     * @param path the path of the file
+     * @param inputStream the stream of the file resource
      * @return the RDF model
      */
-    Model buildRDFModel(String path);
+    Model buildRDFModel(InputStream inputStream);
 
     /**
      * Method that builds an ontology model.
@@ -33,12 +35,12 @@ public interface RDFModelBuilder {
     Model buildOntologyModel(OntModelSpec modelSpec);
 
     /**
-     * Method that builds an ontology model from a file.
+     * Method that builds an ontology model from a stream of a file resource.
      *
-     * @param path      the path of the file
+     * @param inputStream      the stream of the file resource
      * @param modelSpec the model specification
      *                  (e.g. OntModelSpec.OWL_MEM)
      * @return the ontology model
      */
-    Model buildOntologyModel(String path, OntModelSpec modelSpec);
+    Model buildOntologyModel(InputStream inputStream, OntModelSpec modelSpec);
 }
