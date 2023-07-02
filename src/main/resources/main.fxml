@@ -38,7 +38,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.*?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="601.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/20.0.1"
+<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="601.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/20"
       fx:controller="it.unicam.cs.storyscape.controller.AppController">
     <SplitPane dividerPositions="0.24379432624113476" focusTraversable="true"
                VBox.vgrow="ALWAYS">
@@ -61,15 +61,15 @@
                         <Color red="0.624" green="0.624" blue="0.624" fx:id="x2"/>
                     </textFill>
                 </Label>
-                <TextField id="planetSearchBar" fx:id="bookSearchBar"
+                <TextField id="bookSearchBar" fx:id="bookSearchBar"
                            onKeyTyped="#handleKeyTypedOnSearchBar" prefHeight="25.0" prefWidth="240.0"
                            promptText="Search books..." GridPane.rowIndex="1"/>
-                <ListView id="planetsList" fx:id="booksList" onMouseClicked="#handleClickOnBook"
+                <ListView id="booksList" fx:id="booksList" onMouseClicked="#handleClickOnBook"
                           prefHeight="475.0" prefWidth="240.0" GridPane.rowIndex="2"/>
             </GridPane>
         </AnchorPane>
         <ScrollPane>
-            <AnchorPane id="planetDetailView" prefHeight="579.0"
+            <AnchorPane id="bookDetailView" prefHeight="579.0"
                         prefWidth="840.0">
                 <GridPane fx:id="bookDetailView" layoutX="14.0" layoutY="24.0" prefHeight="542.0"
                           prefWidth="777.0" vgap="2.0">
@@ -153,7 +153,7 @@
                             <Font size="17.0"/>
                         </font>
                     </Text>
-                    <Label fx:id="planetMass" text="planet mass: " GridPane.rowIndex="7">
+                    <Label fx:id="bookMass" text="book mass: " GridPane.rowIndex="7">
                         <padding>
                             <Insets left="10.0"/>
                         </padding>
@@ -244,7 +244,7 @@
                         </font>
                     </Label>
                 </GridPane>
-                <VBox fx:id="planetDetailLabels" layoutX="244.0" layoutY="271.0" prefHeight="200.0"
+                <VBox fx:id="bookDetailLabels" layoutX="244.0" layoutY="271.0" prefHeight="200.0"
                       prefWidth="100.0"/>
             </AnchorPane>
         </ScrollPane>

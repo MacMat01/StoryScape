@@ -40,6 +40,16 @@ public class AppController {
 
     /**
      * Instantiates a new App controller.
+     */
+    @Inject
+    public AppController() {
+        this.bookListRender = new BookList();
+        this.bookDetailsRender = new BookDetails();
+        this.querySelector = new QuerySelector();
+    }
+
+    /**
+     * Instantiates a new App controller.
      *
      * @param querySelector     the query selector
      * @param bookListRender    the book list render
