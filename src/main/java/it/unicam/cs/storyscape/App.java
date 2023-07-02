@@ -16,10 +16,9 @@ public class App extends Application {
         launch(args);
     }
 
-
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/fxml/app.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("main.fxml")));
 
         primaryStage.setTitle("StoryScape");
         primaryStage.setScene(new javafx.scene.Scene(root, 1280, 720));

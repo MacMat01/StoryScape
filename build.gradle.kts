@@ -4,7 +4,7 @@ plugins {
     id("org.openjfx.javafxplugin") version "0.0.13"
 }
 
-group = "it.cs.unicam"
+group = "it.unicam.cs.storyscape"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -38,5 +38,5 @@ tasks.test {
 }
 
 application {
-    mainClass.set("it/unicam/cs/storyscape/App.java")
+    mainClass.set("it.unicam.cs.storyscape.App")
 }
