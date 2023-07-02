@@ -27,3 +27,9 @@ tasks.test {
 application {
     mainClass.set("it.unicam.cs.storyscape.App")
 }
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
