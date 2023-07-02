@@ -30,7 +30,6 @@ public class AppController {
     @FXML
     private ListView<String> booksList;
 
-
     @FXML
     private TextField bookSearchBar;
 
