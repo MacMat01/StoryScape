@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 public record JSONData(String jsonData) implements ParsedData {
 
@@ -20,7 +22,7 @@ public record JSONData(String jsonData) implements ParsedData {
 //        Gson gson = new Gson();
         DataObject dataObject = gson.fromJson(jsonData, DataObject.class);
         if (dataObject != null) {
-            return dataObject.getProperty(property);
+            return dataObject.get(property);
         }
         return "";
     }
@@ -29,8 +31,8 @@ public record JSONData(String jsonData) implements ParsedData {
     public Collection<String> getValues() {
 //        Gson gson = new Gson();
         DataObject dataObject = gson.fromJson(jsonData, DataObject.class);
-        if (dataObject != null && dataObject.getValues() != null) {
-            return dataObject.getValues();
+        if (dataObject != null) {
+            return dataObject.values();
         }
         return Collections.emptyList();
     }
@@ -38,16 +40,6 @@ public record JSONData(String jsonData) implements ParsedData {
     /**
      * Class that represents the DataObject used to parse the JSON data.
      */
-    private static class DataObject {
-        private String property;
-        private Collection<String> values;
-
-        public String getProperty(String property) {
-            return this.property;
-        }
-
-        public Collection<String> getValues() {
-            return this.values;
-        }
+    private static class DataObject extends HashMap<String, String> {
     }
 }

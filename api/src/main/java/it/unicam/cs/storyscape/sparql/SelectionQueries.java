@@ -5,9 +5,9 @@ package it.unicam.cs.storyscape.sparql;
  */
 public enum SelectionQueries implements Query {
 
-    BOOK_LIST("SELECT ?label ?value WHERE { ?book rdf:type sfo:Book . BIND(?book AS ?label) . ?book rdfs:label ?value . }"),
-    BOOK_DETAILS("SELECT ?label ?value WHERE { ?book rdf:type sfo:Book . ?book rdfs:label \"%s\" . ?book ?label ?value . }"),
-    SEARCH_BOOK("SELECT ?label ?value WHERE { ?book rdf:type sfo:Book . BIND(?book AS ?label) . ?book rdfs:label ?label . FILTER STRSTARTS(?value, \"%s\")}");
+    BOOK_LIST("SELECT ?label ?value WHERE { ?book rdf:type <https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book> . BIND(?book AS ?label) . ?book rdfs:label ?value . }"),
+    BOOK_DETAILS("SELECT ?label ?value WHERE { ?book rdf:type <https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book> . ?book rdfs:label \"%s\" . ?book ?label ?value . }"),
+    SEARCH_BOOK("SELECT ?label ?value WHERE { ?book rdf:type <https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book> . BIND(?book AS ?label) . ?book rdfs:label ?label . FILTER STRSTARTS(?value, \"%s\")}");
 
     private final String query;
 

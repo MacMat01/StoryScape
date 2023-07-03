@@ -19,7 +19,6 @@ public interface Query {
                 PREFIX dc: <http://purl.org/dc/elements/1.1/>
                 PREFIX dcterms: <http://purl.org/dc/terms/>
                 PREFIX sfo: <https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#>
-                PREFIX sfo: <sci-fi-ontology.rdf>
                 PREFIX powder: <http://www.w3.org/2007/05/powder-s#>
                 PREFIX prov: <http://www.w3.org/ns/prov#>
                 PREFIX xml: <http://www.w3.org/XML/1998/namespace>

@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:sfo="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/"
+         xmlns:sfo="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#"
          xmlns:xml="http://www.w3.org/XML/1998/namespace"
          xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
          xmlns:prov="http://www.w3.org/ns/prov#"
@@ -10,7 +10,7 @@
          xmlns:terms="http://open.vocab.org/terms/"
          xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
          xmlns="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#"
-         xml:base="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
+         xml:base="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#">
     <owl:Ontology rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
         <dc:creator>MacMat</dc:creator>
         <rdfs:comment xml:lang="en">The current ontology allows science fiction lovers to explore, for each author, not
@@ -22,7 +22,7 @@
     </owl:Ontology>
 
 
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -61,7 +61,7 @@
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
 
 
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -124,7 +124,7 @@
     </owl:ObjectProperty>
 
 
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -228,7 +228,7 @@
     </owl:DatatypeProperty>
 
 
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -932,7 +932,7 @@
     </owl:Class>
 
 
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -1418,7 +1418,7 @@
     </owl:NamedIndividual>
 
 
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -1436,7 +1436,7 @@
     </rdf:Description>
 
 
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
