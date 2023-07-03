@@ -50,6 +50,6 @@ public class JSONParser implements Parser {
         if (node == null || (!node.isLiteral() && !node.isResource())) {
             return null;
         }
-        return node.isLiteral() ? node.asLiteral().getString() : node.asResource().getURI();
+        return node.isLiteral() ? node.asLiteral().getString() : node.asResource().getLocalName();
     }
 }

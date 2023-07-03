@@ -23,4 +23,10 @@ public interface ParsedData {
      */
     Collection<String> getValues();
 
+    /**
+     * Returns all keys from the parsed data.
+     *
+     * @return the keys
+     */
+    Collection<String> getKeys();
 }

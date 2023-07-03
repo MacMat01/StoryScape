@@ -28,7 +28,7 @@ public class AppController {
     private Label ontologyStatus;
 
     @FXML
-    private ListView<String> booksList;
+    private ListView<BookList.BookRow> booksList;
 
     @FXML
     private TextField bookSearchBar;
@@ -59,9 +59,9 @@ public class AppController {
         if (bookDetailView.isVisible()) {
             cleanBookDetailFields();
         }
-        String selectedItem = booksList.getSelectionModel().getSelectedItem();
+        BookList.BookRow selectedItem = booksList.getSelectionModel().getSelectedItem();
         if (selectedItem != null) {
-            bookDetailsRender.render(querySelector.getBookDetails(selectedItem), bookDetailView);
+            bookDetailsRender.render(querySelector.getBookDetails(selectedItem.key()), bookDetailView);
             bookDetailView.setVisible(true);
         }
     }

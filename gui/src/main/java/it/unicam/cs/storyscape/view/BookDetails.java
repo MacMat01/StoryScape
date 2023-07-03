@@ -23,7 +23,7 @@ public class BookDetails implements Render<GridPane> {
         for (String propertyName : labeledNodes.keySet()) {
             Node node = labeledNodes.get(propertyName);
             if (node.getId().equals("bookImage")) {
-                Platform.runLater(() -> renderBookImage(node, data.getProperty("image url")));
+                Platform.runLater(() -> renderBookImage(node, data.getProperty(propertyName)));
             } else {
                 Platform.runLater(() -> renderDataOnLabel(node, data, propertyName));
             }
