@@ -17,11 +17,14 @@ public interface Query {
                 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
                 PREFIX owl: <http://www.w3.org/2002/07/owl#>
                 PREFIX dc: <http://purl.org/dc/elements/1.1/>
-                PREFIX sfo: <https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/>
+                PREFIX dcterms: <http://purl.org/dc/terms/>
+                PREFIX sfo: <https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#>
+                PREFIX sfo: <sci-fi-ontology.rdf>
                 PREFIX powder: <http://www.w3.org/2007/05/powder-s#>
                 PREFIX prov: <http://www.w3.org/ns/prov#>
                 PREFIX xml: <http://www.w3.org/XML/1998/namespace>
-                PREFIX terms: <http://open.vocab.org/terms/>
+                PREFIX person: <http://dbpedia.org/ontology/Person/>
+                PREFIX ontology: <http://dbpedia.org/ontology/>
                 """;
     }
 

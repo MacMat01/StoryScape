@@ -1,23 +1,25 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#"
-     xml:base="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:sfo="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://open.vocab.org/terms/"
-     xmlns:Person="http://dbpedia.org/ontology/Person/"
-     xmlns:ontology="http://dbpedia.org/ontology/"
-     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#">
+<rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:sfo="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/"
+         xmlns:xml="http://www.w3.org/XML/1998/namespace"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:prov="http://www.w3.org/ns/prov#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:terms="http://open.vocab.org/terms/"
+         xmlns:powder-s="http://www.w3.org/2007/05/powder-s#"
+         xmlns="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#"
+         xml:base="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
     <owl:Ontology rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf">
-        <rdfs:comment xml:lang="en">The current ontology allows science fiction lovers to explore, for each author, not only the well-known and celebrated novels, but also the short stories and novellas they used to write in abundance. Often, because of their brevity, these works are not easily reprinted, despite their value.</rdfs:comment>
+        <dc:creator>MacMat</dc:creator>
+        <rdfs:comment xml:lang="en">The current ontology allows science fiction lovers to explore, for each author, not
+            only the well-known and celebrated novels, but also the short stories and novellas they used to write in
+            abundance. Often, because of their brevity, these works are not easily reprinted, despite their value.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">sci-fi ontology</rdfs:label>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
     <!-- 
@@ -28,43 +30,35 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
 
     <!-- http://open.vocab.org/terms/defines -->
 
     <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/defines"/>
-    
 
 
     <!-- http://open.vocab.org/terms/describes -->
 
     <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/describes"/>
-    
 
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
 
 
     <!-- http://purl.org/dc/elements/1.1/date -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
 
 
     <!-- http://www.w3.org/2007/05/powder-s#describedby -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2007/05/powder-s#describedby"/>
-    
 
 
     <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
-    
 
 
     <!-- 
@@ -74,8 +68,6 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasPublished -->
@@ -88,8 +80,8 @@
         <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:00:48Z</dc:date>
+        <rdfs:label xml:lang="en">has published</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasWritten -->
@@ -102,8 +94,8 @@
         <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:45:42Z</dc:date>
+        <rdfs:label xml:lang="en">has written</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isPublishedBy -->
@@ -115,8 +107,8 @@
         <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:03:40Z</dc:date>
+        <rdfs:label xml:lang="en">is published by</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isWrittenBy -->
@@ -128,8 +120,8 @@
         <rdfs:range rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:46:33Z</dc:date>
+        <rdfs:label xml:lang="en">is written by</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
     <!-- 
@@ -140,8 +132,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#basedIn -->
 
@@ -151,8 +141,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:22:45Z</dc:date>
+        <rdfs:label xml:lang="en">based in</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#birthDate -->
@@ -162,8 +152,8 @@
         <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:16:38Z</dc:date>
+        <rdfs:label xml:lang="en">birth date</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#bookImage -->
@@ -175,8 +165,8 @@
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-02T16:27:17Z</dc:date>
         <rdfs:comment xml:lang="en">It refers to the URL of the bookImage</rdfs:comment>
+        <rdfs:label xml:lang="en">book image</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#bornIn -->
@@ -186,8 +176,8 @@
         <rdfs:domain rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:17:07Z</dc:date>
+        <rdfs:label xml:lang="en">born in</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#foundationDate -->
@@ -198,8 +188,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:24:17Z</dc:date>
+        <rdfs:label xml:lang="en">foundation date</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages -->
@@ -210,8 +200,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:37Z</dc:date>
+        <rdfs:label xml:lang="en">number of pages</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#publishingDate -->
@@ -222,8 +212,8 @@
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:06:10Z</dc:date>
         <rdfs:comment xml:lang="en">The date refers to the year of publication in Italy</rdfs:comment>
+        <rdfs:label xml:lang="en">publishing date</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#summary -->
@@ -234,8 +224,8 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:09:48Z</dc:date>
+        <rdfs:label xml:lang="en">summary</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
     <!-- 
@@ -246,13 +236,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
 
     <!-- http://dbpedia.org/ontology/Animal -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/Animal"/>
-    
 
 
     <!-- http://dbpedia.org/ontology/Artist -->
@@ -260,7 +247,6 @@
     <owl:Class rdf:about="http://dbpedia.org/ontology/Artist">
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
     </owl:Class>
-    
 
 
     <!-- http://dbpedia.org/ontology/Book -->
@@ -273,7 +259,6 @@
         <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
         <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Book"/>
     </owl:Class>
-    
 
 
     <!-- http://dbpedia.org/ontology/Person -->
@@ -285,7 +270,6 @@
         <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
         <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Person"/>
     </owl:Class>
-    
 
 
     <!-- http://dbpedia.org/ontology/Writer -->
@@ -294,13 +278,11 @@
         <owl:equivalentClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer"/>
         <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Person"/>
     </owl:Class>
-    
 
 
     <!-- http://dbpedia.org/ontology/WrittenWork -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/WrittenWork"/>
-    
 
 
     <!-- http://purl.org/ontology/bibo/Book -->
@@ -308,7 +290,6 @@
     <owl:Class rdf:about="http://purl.org/ontology/bibo/Book">
         <owl:equivalentClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author -->
@@ -318,8 +299,8 @@
         <owl:disjointWith rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:label xml:lang="en">author</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book -->
@@ -327,15 +308,17 @@
     <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isWrittenBy"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty
+                        rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#isWrittenBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                </owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:label xml:lang="en">book</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:FlashStory -->
@@ -346,14 +329,18 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -365,15 +352,21 @@
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed and brief form of storytelling characterized by its extreme brevity.
+        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed
+            and brief form of storytelling characterized by its extreme brevity.
 
-It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete story arc, including characters, setting, conflict, and resolution, within its limited word count.
+            It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a
+            single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete
+            story arc, including characters, setting, conflict, and resolution, within its limited word count.
 
-Flash stories require writers to be economical with their language, employing precise and evocative prose to deliver a powerful impact in a short span of time.
+            Flash stories require writers to be economical with their language, employing precise and evocative prose to
+            deliver a powerful impact in a short span of time.
 
-The brevity of flash stories allows for experimentation with different narrative techniques, themes, and genres, making it a versatile and creative form of storytelling.</rdfs:comment>
+            The brevity of flash stories allows for experimentation with different narrative techniques, themes, and
+            genres, making it a versatile and creative form of storytelling.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">flash story</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Novel -->
@@ -384,14 +377,18 @@ The brevity of flash stories allows for experimentation with different narrative
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">150</xsd:minExclusive>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">150
+                                        </xsd:minExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -403,22 +400,47 @@ The brevity of flash stories allows for experimentation with different narrative
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A novel is a long-form work of fiction that tells a complex and extended narrative. It is a literary genre that encompasses a wide range of storytelling styles, themes, and structures. Novels are typically longer than other forms of fiction, often exceeding 151 pages.
+        <rdfs:comment xml:lang="en">A novel is a long-form work of fiction that tells a complex and extended narrative.
+            It is a literary genre that encompasses a wide range of storytelling styles, themes, and structures. Novels
+            are typically longer than other forms of fiction, often exceeding 151 pages.
 
-At the heart of a novel is its ability to immerse readers in a richly imagined world populated by a diverse cast of characters. Novels allow for intricate plotlines, multiple story arcs, and the exploration of various themes and subplots. They provide ample space for character development, detailed descriptions of settings, and the gradual unfolding of events.
+            At the heart of a novel is its ability to immerse readers in a richly imagined world populated by a diverse
+            cast of characters. Novels allow for intricate plotlines, multiple story arcs, and the exploration of
+            various themes and subplots. They provide ample space for character development, detailed descriptions of
+            settings, and the gradual unfolding of events.
 
-Novels often feature a central protagonist or a group of characters who experience personal growth, confront challenges, and navigate through conflicts. The narrative can follow a linear timeline or employ non-linear structures, alternating between different perspectives or time periods. Novels can delve into the complexities of human emotions, relationships, and societal issues, offering readers a deeper understanding of the human condition.
+            Novels often feature a central protagonist or a group of characters who experience personal growth, confront
+            challenges, and navigate through conflicts. The narrative can follow a linear timeline or employ non-linear
+            structures, alternating between different perspectives or time periods. Novels can delve into the
+            complexities of human emotions, relationships, and societal issues, offering readers a deeper understanding
+            of the human condition.
 
-The settings in novels are vividly depicted, providing a backdrop that can range from historical periods, fantastical realms, futuristic worlds, to everyday contemporary life. Descriptions of these settings serve to create atmosphere, enhance the reader&apos;s immersion, and contribute to the overall narrative experience.
+            The settings in novels are vividly depicted, providing a backdrop that can range from historical periods,
+            fantastical realms, futuristic worlds, to everyday contemporary life. Descriptions of these settings serve
+            to create atmosphere, enhance the reader&apos;s immersion, and contribute to the overall narrative
+            experience.
 
-Themes in novels are wide-ranging, addressing universal concepts such as love, identity, power, morality, social justice, and more. They can offer social commentary, explore philosophical ideas, or reflect on the intricacies of human existence. Novels provide a platform for authors to delve into complex ideas and invite readers to engage with thought-provoking concepts.
+            Themes in novels are wide-ranging, addressing universal concepts such as love, identity, power, morality,
+            social justice, and more. They can offer social commentary, explore philosophical ideas, or reflect on the
+            intricacies of human existence. Novels provide a platform for authors to delve into complex ideas and invite
+            readers to engage with thought-provoking concepts.
 
-Novels offer a comprehensive reading experience, allowing readers to become deeply invested in the lives and journeys of characters over an extended period. They provide an opportunity for authors to develop intricate plotlines, build suspense, and create emotional connections between readers and the story&apos;s world.
+            Novels offer a comprehensive reading experience, allowing readers to become deeply invested in the lives and
+            journeys of characters over an extended period. They provide an opportunity for authors to develop intricate
+            plotlines, build suspense, and create emotional connections between readers and the story&apos;s world.
 
-In summary, a novel is a substantial work of fiction that offers a comprehensive and immersive reading experience. It allows for the exploration of diverse characters, intricate plots, and profound themes. Novels have the capacity to transport readers to different realms, evoke powerful emotions, and provide a lasting impact through their expansive narratives.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The novel is a literary genre that takes the form of a prose narrative, characterized by a text of considerable extent. Its main purpose is to tell the stories of one or more protagonists, whose stories may have both a main plot and a subplot. These plots can sometimes develop over a wide time span, thus allowing for a time-dilated narrative.</rdfs:comment>
+            In summary, a novel is a substantial work of fiction that offers a comprehensive and immersive reading
+            experience. It allows for the exploration of diverse characters, intricate plots, and profound themes.
+            Novels have the capacity to transport readers to different realms, evoke powerful emotions, and provide a
+            lasting impact through their expansive narratives.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">The novel is a literary genre that takes the form of a prose narrative,
+            characterized by a text of considerable extent. Its main purpose is to tell the stories of one or more
+            protagonists, whose stories may have both a main plot and a subplot. These plots can sometimes develop over
+            a wide time span, thus allowing for a time-dilated narrative.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">novel</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:ShortNovel -->
@@ -429,17 +451,23 @@ In summary, a novel is a substantial work of fiction that offers a comprehensive
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50</xsd:minExclusive>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50
+                                        </xsd:minExclusive>
                                     </rdf:Description>
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -451,19 +479,35 @@ In summary, a novel is a substantial work of fiction that offers a comprehensive
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
+        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that
+            falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer
+            than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
 
-In a short novel, authors have more space and flexibility to develop characters, explore themes, and create intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper characterization, more detailed descriptions of settings, and a more complex exploration of ideas and conflicts.
+            In a short novel, authors have more space and flexibility to develop characters, explore themes, and create
+            intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper
+            characterization, more detailed descriptions of settings, and a more complex exploration of ideas and
+            conflicts.
 
-Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It often focuses on a central character or a small group of characters and their journeys, struggles, or transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
+            Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It
+            often focuses on a central character or a small group of characters and their journeys, struggles, or
+            transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
 
-Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery, science fiction, historical fiction, and more. They can tackle a range of themes, delve into the complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative structure.
+            Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery,
+            science fiction, historical fiction, and more. They can tackle a range of themes, delve into the
+            complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative
+            structure.
 
-Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
+            Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter
+            time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact
+            narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
 
-In summary, a short novel combines the advantages of both short stories and novels, providing a more extensive exploration of characters and themes than a short story while maintaining a relatively compact and concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive reading experience within a condensed framework.</rdfs:comment>
+            In summary, a short novel combines the advantages of both short stories and novels, providing a more
+            extensive exploration of characters and themes than a short story while maintaining a relatively compact and
+            concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive
+            reading experience within a condensed framework.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">short novel</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:ShortStory -->
@@ -474,17 +518,23 @@ In summary, a short novel combines the advantages of both short stories and nove
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5</xsd:minExclusive>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">5
+                                        </xsd:minExclusive>
                                     </rdf:Description>
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">21</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">21
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -496,17 +546,31 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A short story is a fictional prose narrative that is typically longer than a flash story but shorter than a novella or novel. It is a self-contained work of literature that explores a specific theme, idea, or event within a limited number of pages.
+        <rdfs:comment xml:lang="en">A short story is a fictional prose narrative that is typically longer than a flash
+            story but shorter than a novella or novel. It is a self-contained work of literature that explores a
+            specific theme, idea, or event within a limited number of pages.
 
-A short story typically focuses on a single character or a small group of characters and their interactions, experiences, or conflicts. It aims to create a complete and engaging narrative within a concise framework. Unlike a novel, a short story often lacks the extensive development of multiple plotlines or in-depth exploration of numerous characters.
+            A short story typically focuses on a single character or a small group of characters and their interactions,
+            experiences, or conflicts. It aims to create a complete and engaging narrative within a concise framework.
+            Unlike a novel, a short story often lacks the extensive development of multiple plotlines or in-depth
+            exploration of numerous characters.
 
-Short stories can span a wide range of genres, including romance, mystery, science fiction, fantasy, horror, and more. They allow writers to delve into various aspects of human nature, emotions, and experiences, capturing moments of insight, revelation, or transformation.
+            Short stories can span a wide range of genres, including romance, mystery, science fiction, fantasy, horror,
+            and more. They allow writers to delve into various aspects of human nature, emotions, and experiences,
+            capturing moments of insight, revelation, or transformation.
 
-While short stories provide more space for character development, setting descriptions, and intricate plot structures compared to flash fiction, they still require a careful balance between brevity and depth. Writers must craft compelling narratives with well-rounded characters, a defined setting, and a satisfying resolution, all within the limited word count of a short story.
+            While short stories provide more space for character development, setting descriptions, and intricate plot
+            structures compared to flash fiction, they still require a careful balance between brevity and depth.
+            Writers must craft compelling narratives with well-rounded characters, a defined setting, and a satisfying
+            resolution, all within the limited word count of a short story.
 
-Short stories offer readers the opportunity to experience a complete story in a relatively short amount of time, making them accessible and enjoyable for both casual and avid readers. They allow for creative exploration and experimentation with narrative techniques, literary devices, and storytelling styles while delivering a satisfying narrative punch.</rdfs:comment>
+            Short stories offer readers the opportunity to experience a complete story in a relatively short amount of
+            time, making them accessible and enjoyable for both casual and avid readers. They allow for creative
+            exploration and experimentation with narrative techniques, literary devices, and storytelling styles while
+            delivering a satisfying narrative punch.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">short story</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Story -->
@@ -517,17 +581,23 @@ Short stories offer readers the opportunity to experience a complete story in a 
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">20</xsd:minExclusive>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">20
+                                        </xsd:minExclusive>
                                     </rdf:Description>
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">51</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">51
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -539,24 +609,52 @@ Short stories offer readers the opportunity to experience a complete story in a 
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A story is a narrative account of events, experiences, or imaginary happenings that unfold within a literary work. It is a fundamental form of human communication and has been used for centuries as a means of conveying information, entertaining, and exploring the depths of the human condition.
+        <rdfs:comment xml:lang="en">A story is a narrative account of events, experiences, or imaginary happenings that
+            unfold within a literary work. It is a fundamental form of human communication and has been used for
+            centuries as a means of conveying information, entertaining, and exploring the depths of the human
+            condition.
 
-A story typically revolves around characters who undergo a series of actions, encounters, and challenges, which drive the plot forward. It encompasses various elements such as setting, conflict, theme, and resolution. These elements work together to create a cohesive and engaging narrative that captivates readers or listeners.
+            A story typically revolves around characters who undergo a series of actions, encounters, and challenges,
+            which drive the plot forward. It encompasses various elements such as setting, conflict, theme, and
+            resolution. These elements work together to create a cohesive and engaging narrative that captivates readers
+            or listeners.
 
-The setting of a story refers to the time, place, and social environment in which the events occur. It provides the backdrop against which the characters and their actions are situated, shaping the overall atmosphere and context of the narrative.
+            The setting of a story refers to the time, place, and social environment in which the events occur. It
+            provides the backdrop against which the characters and their actions are situated, shaping the overall
+            atmosphere and context of the narrative.
 
-Conflict is a central component of a story, presenting obstacles, dilemmas, or tensions that the characters must confront and overcome. It can manifest as internal struggles within a character&apos;s mind or external challenges arising from interactions with others or the environment. Conflict is often instrumental in driving the plot and generating suspense, as characters strive to resolve their conflicts and achieve their goals.
+            Conflict is a central component of a story, presenting obstacles, dilemmas, or tensions that the characters
+            must confront and overcome. It can manifest as internal struggles within a character&apos;s mind or external
+            challenges arising from interactions with others or the environment. Conflict is often instrumental in
+            driving the plot and generating suspense, as characters strive to resolve their conflicts and achieve their
+            goals.
 
-Themes in a story are the underlying ideas, messages, or concepts that the author seeks to convey. They can explore various aspects of the human experience, such as love, friendship, morality, power, justice, or the passage of time. Themes provide deeper layers of meaning and resonance within a story, inviting readers to reflect on universal truths or engage with social, cultural, or philosophical issues.
+            Themes in a story are the underlying ideas, messages, or concepts that the author seeks to convey. They can
+            explore various aspects of the human experience, such as love, friendship, morality, power, justice, or the
+            passage of time. Themes provide deeper layers of meaning and resonance within a story, inviting readers to
+            reflect on universal truths or engage with social, cultural, or philosophical issues.
 
-The resolution of a story brings about the conclusion or outcome of the events and conflicts depicted. It may provide closure, offer insights or revelations, or leave room for interpretation, depending on the narrative&apos;s intention. A satisfying resolution often ties up loose ends, offers emotional or intellectual satisfaction, or leaves a lasting impact on the reader.
+            The resolution of a story brings about the conclusion or outcome of the events and conflicts depicted. It
+            may provide closure, offer insights or revelations, or leave room for interpretation, depending on the
+            narrative&apos;s intention. A satisfying resolution often ties up loose ends, offers emotional or
+            intellectual satisfaction, or leaves a lasting impact on the reader.
 
-Stories come in a multitude of forms, including novels, short stories, plays, fables, folktales, myths, and more. They serve as a powerful tool for connecting with others, exploring different perspectives, and immersing oneself in vivid and imaginative worlds. Through stories, writers and storytellers have the ability to entertain, educate, inspire, and provoke thought, creating a lasting impact on individuals and societies alike.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The short story is a narrative form of relatively small size. It usually runs in a narrative arc of 20 to 50 pages at most. It can be considered short if it ranges between 5 and 20 pages, or even very short if less than 5 pages.
+            Stories come in a multitude of forms, including novels, short stories, plays, fables, folktales, myths, and
+            more. They serve as a powerful tool for connecting with others, exploring different perspectives, and
+            immersing oneself in vivid and imaginative worlds. Through stories, writers and storytellers have the
+            ability to entertain, educate, inspire, and provoke thought, creating a lasting impact on individuals and
+            societies alike.
+        </rdfs:comment>
+        <rdfs:comment xml:lang="en">The short story is a narrative form of relatively small size. It usually runs in a
+            narrative arc of 20 to 50 pages at most. It can be considered short if it ranges between 5 and 20 pages, or
+            even very short if less than 5 pages.
 
-Because of its limited size, the short story requires measured attention to detail and has certain specific structural features. It must present a unique plot revolving around a single main event and involving one or a few characters.</rdfs:comment>
+            Because of its limited size, the short story requires measured attention to detail and has certain specific
+            structural features. It must present a unique plot revolving around a single main event and involving one or
+            a few characters.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">story</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Writer -->
@@ -565,11 +663,16 @@ Because of its limited size, the short story requires measured attention to deta
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
+                    <rdf:Description
+                            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasWritten"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasWritten"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">
+                            1
+                        </owl:minQualifiedCardinality>
+                        <owl:onClass
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -577,8 +680,8 @@ Because of its limited size, the short story requires measured attention to deta
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
+        <rdfs:label xml:lang="en">writer</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:FlashFiction -->
@@ -589,14 +692,18 @@ Because of its limited size, the short story requires measured attention to deta
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -608,15 +715,21 @@ Because of its limited size, the short story requires measured attention to deta
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed and brief form of storytelling characterized by its extreme brevity.
+        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed
+            and brief form of storytelling characterized by its extreme brevity.
 
-It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete story arc, including characters, setting, conflict, and resolution, within its limited word count.
+            It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a
+            single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete
+            story arc, including characters, setting, conflict, and resolution, within its limited word count.
 
-Flash stories require writers to be economical with their language, employing precise and evocative prose to deliver a powerful impact in a short span of time.
+            Flash stories require writers to be economical with their language, employing precise and evocative prose to
+            deliver a powerful impact in a short span of time.
 
-The brevity of flash stories allows for experimentation with different narrative techniques, themes, and genres, making it a versatile and creative form of storytelling.</rdfs:comment>
+            The brevity of flash stories allows for experimentation with different narrative techniques, themes, and
+            genres, making it a versatile and creative form of storytelling.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">flash fiction</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:MicroFiction -->
@@ -627,14 +740,18 @@ The brevity of flash stories allows for experimentation with different narrative
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">6
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -646,15 +763,21 @@ The brevity of flash stories allows for experimentation with different narrative
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed and brief form of storytelling characterized by its extreme brevity.
+        <rdfs:comment xml:lang="en">A flash story, also known as a flash fiction or micro fiction, is a highly condensed
+            and brief form of storytelling characterized by its extreme brevity.
 
-It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete story arc, including characters, setting, conflict, and resolution, within its limited word count.
+            It is a complete narrative that typically consists of only a few hundred words or less, often ranging from a
+            single sentence to a few paragraphs. Despite its concise nature, a flash story aims to convey a complete
+            story arc, including characters, setting, conflict, and resolution, within its limited word count.
 
-Flash stories require writers to be economical with their language, employing precise and evocative prose to deliver a powerful impact in a short span of time.
+            Flash stories require writers to be economical with their language, employing precise and evocative prose to
+            deliver a powerful impact in a short span of time.
 
-The brevity of flash stories allows for experimentation with different narrative techniques, themes, and genres, making it a versatile and creative form of storytelling.</rdfs:comment>
+            The brevity of flash stories allows for experimentation with different narrative techniques, themes, and
+            genres, making it a versatile and creative form of storytelling.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">micro fiction</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Novella -->
@@ -665,17 +788,23 @@ The brevity of flash stories allows for experimentation with different narrative
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50</xsd:minExclusive>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50
+                                        </xsd:minExclusive>
                                     </rdf:Description>
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -687,19 +816,35 @@ The brevity of flash stories allows for experimentation with different narrative
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
+        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that
+            falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer
+            than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
 
-In a short novel, authors have more space and flexibility to develop characters, explore themes, and create intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper characterization, more detailed descriptions of settings, and a more complex exploration of ideas and conflicts.
+            In a short novel, authors have more space and flexibility to develop characters, explore themes, and create
+            intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper
+            characterization, more detailed descriptions of settings, and a more complex exploration of ideas and
+            conflicts.
 
-Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It often focuses on a central character or a small group of characters and their journeys, struggles, or transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
+            Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It
+            often focuses on a central character or a small group of characters and their journeys, struggles, or
+            transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
 
-Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery, science fiction, historical fiction, and more. They can tackle a range of themes, delve into the complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative structure.
+            Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery,
+            science fiction, historical fiction, and more. They can tackle a range of themes, delve into the
+            complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative
+            structure.
 
-Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
+            Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter
+            time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact
+            narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
 
-In summary, a short novel combines the advantages of both short stories and novels, providing a more extensive exploration of characters and themes than a short story while maintaining a relatively compact and concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive reading experience within a condensed framework.</rdfs:comment>
+            In summary, a short novel combines the advantages of both short stories and novels, providing a more
+            extensive exploration of characters and themes than a short story while maintaining a relatively compact and
+            concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive
+            reading experience within a condensed framework.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">novella</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Novellette -->
@@ -710,17 +855,23 @@ In summary, a short novel combines the advantages of both short stories and nove
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onProperty
+                                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#numberOfPages"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                        </owl:qualifiedCardinality>
                         <owl:onDataRange>
                             <rdfs:Datatype>
                                 <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
                                 <owl:withRestrictions rdf:parseType="Collection">
                                     <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50</xsd:minExclusive>
+                                        <xsd:minExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">50
+                                        </xsd:minExclusive>
                                     </rdf:Description>
                                     <rdf:Description>
-                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151</xsd:maxExclusive>
+                                        <xsd:maxExclusive
+                                                rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">151
+                                        </xsd:maxExclusive>
                                     </rdf:Description>
                                 </owl:withRestrictions>
                             </rdfs:Datatype>
@@ -732,19 +883,35 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:subClassOf rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:12:04Z</dc:date>
-        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
+        <rdfs:comment xml:lang="en">A short novel, also known as a novella or a novelette, is a work of fiction that
+            falls in between a short story and a full-length novel in terms of length and narrative scope. It is longer
+            than a short story but shorter than a typical novel, typically spanning from about 51 to 150 pages.
 
-In a short novel, authors have more space and flexibility to develop characters, explore themes, and create intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper characterization, more detailed descriptions of settings, and a more complex exploration of ideas and conflicts.
+            In a short novel, authors have more space and flexibility to develop characters, explore themes, and create
+            intricate plotlines compared to shorter forms of fiction. The additional length allows for deeper
+            characterization, more detailed descriptions of settings, and a more complex exploration of ideas and
+            conflicts.
 
-Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It often focuses on a central character or a small group of characters and their journeys, struggles, or transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
+            Despite its brevity, a short novel still aims to provide a complete and satisfying reading experience. It
+            often focuses on a central character or a small group of characters and their journeys, struggles, or
+            transformations. The plot unfolds within a concise framework, with a clear beginning, middle, and end.
 
-Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery, science fiction, historical fiction, and more. They can tackle a range of themes, delve into the complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative structure.
+            Short novels can encompass a variety of genres and styles, including literary fiction, romance, mystery,
+            science fiction, historical fiction, and more. They can tackle a range of themes, delve into the
+            complexities of human relationships, or explore thought-provoking concepts within a more condensed narrative
+            structure.
 
-Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
+            Due to their length, short novels offer readers the opportunity to enjoy a complete story within a shorter
+            time frame compared to longer novels. They can be ideal for readers who prefer a more focused and compact
+            narrative or for writers who want to experiment with storytelling forms between shorter and longer formats.
 
-In summary, a short novel combines the advantages of both short stories and novels, providing a more extensive exploration of characters and themes than a short story while maintaining a relatively compact and concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive reading experience within a condensed framework.</rdfs:comment>
+            In summary, a short novel combines the advantages of both short stories and novels, providing a more
+            extensive exploration of characters and themes than a short story while maintaining a relatively compact and
+            concise narrative. It offers a balance between depth and brevity, delivering a captivating and immersive
+            reading experience within a condensed framework.
+        </rdfs:comment>
+        <rdfs:label xml:lang="en">novellette</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher -->
@@ -752,13 +919,17 @@ In summary, a short novel combines the advantages of both short stories and nove
     <owl:Class rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasPublished"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onProperty
+                        rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#hasPublished"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1
+                </owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:creator>MacMat</dc:creator>
+        <rdfs:comment xml:lang="en">The publisher is the company who publishes the books</rdfs:comment>
+        <rdfs:label xml:lang="en">publisher</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- 
@@ -769,8 +940,6 @@ In summary, a short novel combines the advantages of both short stories and nove
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A._E._Van_Vogt -->
 
@@ -780,8 +949,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Gretna (Canada)</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:45Z</dc:date>
+        <rdfs:label xml:lang="en">a. e. van vogt</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A_Message_from_Morj -->
@@ -796,7 +965,6 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="en">A Message from Morj</rdfs:label>
         <rdfs:label xml:lang="it">Un Messaggio da Morj</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Charles_L._Harness -->
@@ -807,8 +975,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Colorado City</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:45Z</dc:date>
+        <rdfs:label xml:lang="en">charles l. harness</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Corridoi_del_Tempo -->
@@ -825,7 +993,6 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="it">Corridoi del Tempo</rdfs:label>
         <rdfs:label xml:lang="en">Krono</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Edward_D._Hoch -->
@@ -837,8 +1004,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Rochester</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:50:12Z</dc:date>
+        <rdfs:label xml:lang="en">edward d. hoch</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#George_A._Effinger -->
@@ -849,8 +1016,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Cleveland</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:27Z</dc:date>
+        <rdfs:label xml:lang="en">George A. Effinger</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Henry_Kuttner -->
@@ -861,13 +1028,14 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Los Angeles</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:52Z</dc:date>
+        <rdfs:label xml:lang="en">Henry Kuttner</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Gattino_di_Schrodinger -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Gattino_di_Schrodinger">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Gattino_di_Schrodinger">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
         <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#George_A._Effinger"/>
@@ -878,7 +1046,6 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="it">Il Gattino di Schrodinger</rdfs:label>
         <rdfs:label xml:lang="en">Schrodinger&apos;s Kitten</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Isaac_Asimov -->
@@ -889,8 +1056,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Petrovici</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T12:44:31Z</dc:date>
+        <rdfs:label xml:lang="en">Isaac Asimov</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Jack_Finney -->
@@ -901,8 +1068,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Milwaukee</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:36Z</dc:date>
+        <rdfs:label xml:lang="en">Jack Finney</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Johnny_Mnemonico -->
@@ -918,21 +1085,21 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="en">Johnny Mnemonic</rdfs:label>
         <rdfs:label xml:lang="it">Johnny Mnemonico</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna -->
 
     <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf/sfo:Publisher"/>
-        <hasPublished rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
+        <hasPublished
+                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
         <basedIn>Piacenza</basedIn>
         <foundationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1954</foundationDate>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T16:12:15Z</dc:date>
         <rdfs:comment xml:lang="en">This publisher has published The_Man_in_the_High_Castle in Italy</rdfs:comment>
+        <rdfs:label xml:lang="en">La Tribuna</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Longanesi -->
@@ -942,8 +1109,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <hasPublished rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#A_Message_from_Morj"/>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:32:51Z</dc:date>
+        <rdfs:label xml:lang="en">Longanesi</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori -->
@@ -951,21 +1118,22 @@ In summary, a short novel combines the advantages of both short stories and nove
     <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori">
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:45:14Z</dc:date>
+        <rdfs:label xml:lang="en">Mondadori</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Philip_K._Dick -->
 
     <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Philip_K._Dick">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
-        <hasWritten rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
+        <hasWritten
+                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle"/>
         <birthDate>16/12/1928</birthDate>
         <bornIn>Chicago</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:52:32Z</dc:date>
+        <rdfs:label xml:lang="en">Philip K. Dick</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ponzoni -->
@@ -973,13 +1141,14 @@ In summary, a short novel combines the advantages of both short stories and nove
     <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ponzoni">
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:45:32Z</dc:date>
+        <rdfs:label xml:lang="en">Ponzoni</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Racconti_dalle_Foreste_di_Venia -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Racconti_dalle_Foreste_di_Venia">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Racconti_dalle_Foreste_di_Venia">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
         <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Silverberg"/>
@@ -991,7 +1160,6 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="it">Racconti dalle Foreste di Venia</rdfs:label>
         <rdfs:label xml:lang="en">Tales from the Venia Woods</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ray_Russel -->
@@ -1003,8 +1171,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Chicago</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:31:18Z</dc:date>
+        <rdfs:label xml:lang="en">Ray Russel</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Sheckley -->
@@ -1015,21 +1183,22 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>New York</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:18Z</dc:date>
+        <rdfs:label xml:lang="en">Robert Sheckley</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Silverberg -->
 
     <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Silverberg">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Author"/>
-        <hasWritten rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo"/>
+        <hasWritten
+                rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo"/>
         <birthDate>15/01/1935</birthDate>
         <bornIn>New York</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:37:26Z</dc:date>
+        <rdfs:label xml:lang="en">Robert Silverberg</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Rod_Serling -->
@@ -1040,8 +1209,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Syracuse</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:44:07Z</dc:date>
+        <rdfs:label xml:lang="en">Robert Serling</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Se_Stesso -->
@@ -1058,23 +1227,27 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="en">Itself</rdfs:label>
         <rdfs:label xml:lang="it">Se Stesso</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#The_Man_in_the_High_Castle">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <bookImage>https://www.fantascienza.com/catalogo/imgbank/cover/01215.jpg</bookImage>
         <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">322</numberOfPages>
         <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1965</publishingDate>
-        <summary>The Axis forces have won World War II and America is divided into two parts, one enslaved to the Reich, the other to the Japanese. A nightmarish reality looms over the rest of the world: the creed of Aryan racial superiority has run so rampant as to remove any will or possibility of redemption. Africa is reduced to a desert, the victim of a radical extermination solution, while in Europe Italy has taken the crumbs and the Nazis from their launch pads prepare to send rockets to Mars and atomic bombs to Japan.</summary>
+        <summary>The Axis forces have won World War II and America is divided into two parts, one enslaved to the Reich,
+            the other to the Japanese. A nightmarish reality looms over the rest of the world: the creed of Aryan racial
+            superiority has run so rampant as to remove any will or possibility of redemption. Africa is reduced to a
+            desert, the victim of a radical extermination solution, while in Europe Italy has taken the crumbs and the
+            Nazis from their launch pads prepare to send rockets to Mars and atomic bombs to Japan.
+        </summary>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:53:34Z</dc:date>
         <rdfs:label xml:lang="it">La Svastica sul Sole</rdfs:label>
         <rdfs:label xml:lang="en">The Man in the High Castle</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Tutta_la_Verità -->
@@ -1091,12 +1264,12 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="en">The Whole Truth</rdfs:label>
         <rdfs:label xml:lang="it">Tutta la Verità</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Un_Biglietto_per_Tranai -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Un_Biglietto_per_Tranai">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Un_Biglietto_per_Tranai">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna"/>
         <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Robert_Sheckley"/>
@@ -1108,7 +1281,6 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="en">A Ticket to Tranai</rdfs:label>
         <rdfs:label xml:lang="it">Un Biglietto per Tranai</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Viaggio_Allucinante -->
@@ -1120,13 +1292,19 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bookImage>https://www.fantascienza.com/catalogo/imgbank/cover/01168.jpg</bookImage>
         <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">203</numberOfPages>
         <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1966</publishingDate>
-        <summary>Reduced to the size of bacteria along with their spacecraft, a handful of men and an intriguing girl go on a journey of discovery. The setting for their fascinating and dangerous explorations, however, is not the cosmos but the human body. Their incredible mission, in fact, is to travel inside a scientist&apos;s circulatory system to reach and destroy the brain embolus that is about to kill him. The pitfalls they encounter are compounded by discord and betrayal. But the journey must continue, the challenge to the impossible must be met. For at stake is the life of a genius whose studies have led to extraordinary, though as yet unknown, results.</summary>
+        <summary>Reduced to the size of bacteria along with their spacecraft, a handful of men and an intriguing girl go
+            on a journey of discovery. The setting for their fascinating and dangerous explorations, however, is not the
+            cosmos but the human body. Their incredible mission, in fact, is to travel inside a scientist&apos;s
+            circulatory system to reach and destroy the brain embolus that is about to kill him. The pitfalls they
+            encounter are compounded by discord and betrayal. But the journey must continue, the challenge to the
+            impossible must be met. For at stake is the life of a genius whose studies have led to extraordinary, though
+            as yet unknown, results.
+        </summary>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:03Z</dc:date>
         <rdfs:label xml:lang="en">Fantastic Voyage</rdfs:label>
         <rdfs:label xml:lang="it">Viaggio Allucinante</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#William_Gibson -->
@@ -1137,8 +1315,8 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bornIn>Conway</bornIn>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:58Z</dc:date>
+        <rdfs:label xml:lang="en">William Gibson</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Zoo -->
@@ -1149,54 +1327,68 @@ In summary, a short novel combines the advantages of both short stories and nove
         <bookImage>https://www.fantascienza.com/catalogo/imgbank/cover/02717.jpg</bookImage>
         <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</numberOfPages>
         <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1979</publishingDate>
-        <summary>Ogni anno, alla stessa ora dello stesso giorno, il fantomatico Professor Hugo scende sulla Terra con la sua astronave argentea a mostrare agli abitanti di Chicago il suo zoo interplanetario. E lo spettacolo è come sempre straordinario. Tutti sono concordi nel dire che è il miglior zoo che si sia mai visto. Sarà vero?</summary>
+        <summary>Ogni anno, alla stessa ora dello stesso giorno, il fantomatico Professor Hugo scende sulla Terra con la
+            sua astronave argentea a mostrare agli abitanti di Chicago il suo zoo interplanetario. E lo spettacolo è
+            come sempre straordinario. Tutti sono concordi nel dire che è il miglior zoo che si sia mai visto. Sarà
+            vero?
+        </summary>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-29T14:49:57Z</dc:date>
         <rdfs:label xml:lang="en">Zoo</rdfs:label>
         <rdfs:label xml:lang="it">Zoo</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Gli_Invasati_(L&apos;invasione_degli_ultracorpi) -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Gli_Invasati_(L&apos;invasione_degli_ultracorpi)">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Gli_Invasati_(L&apos;invasione_degli_ultracorpi)">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
         <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Jack_Finney"/>
         <bookImage>https://www.fantascienza.com/catalogo/imgbank/cover/00107.jpg</bookImage>
         <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">148</numberOfPages>
         <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1956</publishingDate>
-        <summary>Fino a qualche tempo prima Santa Mira era la classica piccola città, tranquilla e &quot;normale&quot;. Ora invece, malati che improvvisamente guariscono, bambini che dicono che la madre non è la madre, donne che dicono che lo zio non è lo zio. Qualcosa di strano sta accadendo. Il dottor Bennell inizia ad indagare per capire l&apos;origine vera di questi &quot;disturbi&quot;.</summary>
+        <summary>Fino a qualche tempo prima Santa Mira era la classica piccola città, tranquilla e &quot;normale&quot;.
+            Ora invece, malati che improvvisamente guariscono, bambini che dicono che la madre non è la madre, donne che
+            dicono che lo zio non è lo zio. Qualcosa di strano sta accadendo. Il dottor Bennell inizia ad indagare per
+            capire l&apos;origine vera di questi &quot;disturbi&quot;.
+        </summary>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:40:26Z</dc:date>
         <rdfs:label xml:lang="it">Gli Invasati (L&apos;invasione degli ultracorpi)</rdfs:label>
         <rdfs:label xml:lang="en">The Body Snatchers</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Cacciatore_di_Androidi_(Blade_Runner) -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Cacciatore_di_Androidi_(Blade_Runner)">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Il_Cacciatore_di_Androidi_(Blade_Runner)">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#La_Tribuna"/>
         <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Philip_K._Dick"/>
         <bookImage>https://www.fantascienza.com/catalogo/imgbank/cover/00811.jpg</bookImage>
         <numberOfPages rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">232</numberOfPages>
         <publishingDate rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1971</publishingDate>
-        <summary>In a future Earth where the dwindling number of inhabitants are often categorized as special because of mutations induced by radioactive dust inherited from a nuclear war, humans and fugitive androids coexist with difficulty. Rick Deckard is an android hunter tasked with picking up escaped slaves, but in carrying out his task he finds himself asking more and more questions about himself and what makes him truly human. And to weave strange relationships with some of the androids. Until events precipitate and every knot unravels, for humans and androids alike....</summary>
+        <summary>In a future Earth where the dwindling number of inhabitants are often categorized as special because of
+            mutations induced by radioactive dust inherited from a nuclear war, humans and fugitive androids coexist
+            with difficulty. Rick Deckard is an android hunter tasked with picking up escaped slaves, but in carrying
+            out his task he finds himself asking more and more questions about himself and what makes him truly human.
+            And to weave strange relationships with some of the androids. Until events precipitate and every knot
+            unravels, for humans and androids alike....
+        </summary>
         <dc:creator>MacMat</dc:creator>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-07-01T13:43:23Z</dc:date>
         <rdfs:label xml:lang="en">Blade Runner</rdfs:label>
         <rdfs:label xml:lang="it">Il Cacciatore di Androidi</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Uomo_che_Volava_nel_Tempo">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Mondadori"/>
         <bookImage>https://www.fantascienza.com/catalogo/imgbank/cover/04866.jpg</bookImage>
@@ -1207,12 +1399,12 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="it">L&apos;Uomo che Volava nel Tempo</rdfs:label>
         <rdfs:label xml:lang="en">The Man Who floated in time</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Altra_Realtà_(La_scacchiera_sterminata) -->
 
-    <owl:NamedIndividual rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Altra_Realtà_(La_scacchiera_sterminata)">
+    <owl:NamedIndividual
+            rdf:about="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#L&apos;Altra_Realtà_(La_scacchiera_sterminata)">
         <rdf:type rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#sfo:Book"/>
         <isPublishedBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Ponzoni"/>
         <isWrittenBy rdf:resource="https://www.cs.unicam.it/matteo.machella/sci-fi-ontology.rdf#Henry_Kuttner"/>
@@ -1224,7 +1416,6 @@ In summary, a short novel combines the advantages of both short stories and nove
         <rdfs:label xml:lang="it">L&apos;Altra Realtà (La scacchiera sterminata)</rdfs:label>
         <rdfs:label xml:lang="en">The Fairy Chessman</rdfs:label>
     </owl:NamedIndividual>
-    
 
 
     <!-- 
@@ -1243,7 +1434,6 @@ In summary, a short novel combines the advantages of both short stories and nove
         <terms:describes rdf:resource="http://dbpedia.org/ontology/Book"/>
         <terms:describes rdf:resource="http://dbpedia.org/ontology/Person"/>
     </rdf:Description>
-    
 
 
     <!-- 
@@ -1265,6 +1455,5 @@ In summary, a short novel combines the advantages of both short stories and nove
 </rdf:RDF>
 
 
-
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+        <!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 

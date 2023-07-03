@@ -14,7 +14,9 @@ public enum URIs {
     SFO("sci-fi-ontology.rdf"),
     POWDER("http://www.w3.org/2007/05/powder-s#"),
     PROV("http://www.w3.org/ns/prov#"),
-    XML("http://www.w3.org/XML/1998/namespace");
+    XML("http://www.w3.org/XML/1998/namespace"),
+    PERSON("http://dbpedia.org/ontology/Person/"),
+    ONTOLOGY("http://dbpedia.org/ontology/");
 
     private final String uri;
 

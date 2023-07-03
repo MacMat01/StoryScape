@@ -46,9 +46,9 @@ public class QuerySelector {
      */
     public String getConsistencyStatus() {
         if (controller.isConsistent()) {
-            return "Ontology consistent ✓";
+            return "Ontology consistent";
         } else {
-            return "Inconsistent ontology ｘ";
+            return "Inconsistent ontology";
         }
     }
 

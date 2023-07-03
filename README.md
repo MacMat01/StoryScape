@@ -22,3 +22,8 @@ StoryScape offers an enriching experience for exploring and enjoying the vast un
 
 Note: This is a fictional repository description created for academic purposes. The actual description may vary based on
 the specific features and objectives of the StoryScape repository.
+
+## Running the project
+```bash
+$ ./gradlew :gui:run
+```
